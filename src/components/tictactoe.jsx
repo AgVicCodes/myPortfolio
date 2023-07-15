@@ -30,10 +30,10 @@ export default function Board() {
     }
 
     return <>
-    
+
     <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
-        <Square value={squares[1]} onSquareClick={() => handleClick(1)}  />
+        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
         <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
     </div>
     <div className="board-row">
