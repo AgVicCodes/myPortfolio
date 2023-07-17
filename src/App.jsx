@@ -11,6 +11,7 @@ export default function Myapp() {
 		{/* <Flex /> */}
 	
 	</>;Edited JSX
+
 	// 	// return <button className="square">{value}</button>;
 	// 	const [value, setValue] = useState(null);
 		
