@@ -10,8 +10,7 @@ export default function Myapp() {
 		{/* <Grid /> */}
 		{/* <Flex /> */}
 	
-	</>;Edited JSX
-
+	</>;
 	// 	// return <button className="square">{value}</button>;
 	// 	const [value, setValue] = useState(null);
 		
