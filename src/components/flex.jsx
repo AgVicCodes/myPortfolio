@@ -15,7 +15,7 @@ export default function Flex() {
             <div className='w-32 m-2 h-32 bg-red-800 rounded-lg shadow-md'></div>
             <div className='w-32 m-2 h-32 bg-red-950 rounded-lg shadow-md'></div>
         </div>
-    </div>Edited JSX
+    </div>
   )
 }
 
