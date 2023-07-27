@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import "./App.css";
 
-	function Square({value}) {
+	function Square() {
 		// return <button className="square">{value}</button>;
+		const [value, setValue] = useState(null);
+		
 		function handClicked() {
 			console.log(value + " has been clicked!");
 		}
@@ -19,22 +21,32 @@ import "./App.css";
 	export default function Board() {
 		return <>
 			<div className="board-row">
-					<Square value="1"/>
-					<Square value="2"/>
-					<Square value="3"/>
+					<Square />
+					<Square />
+					<Square />
 			</div>
 			<div className="board-row">
-					<Square value="4"/>
-					<Square value="5"/>
-					<Square value="6"/>
+					<Square />
+					<Square />
+					<Square />
 			</div>			
 			<div className="board-row">
-					<Square value="7"/>
-					<Square value="8"/>
-					<Square value="9"/>
+					<Square />
+					<Square />
+					<Square />
 			</div>					
 		</>
 	}
+
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
 
 	/* function Square({ value, onSquareClick }) {
 		return (
