@@ -6,7 +6,7 @@ import "./App.css";
 		const [value, setValue] = useState(null);
 		
 		function handClicked() {
-			console.log(value + " has been clicked!");
+			setValue('X');
 		}
 
 		return <>
