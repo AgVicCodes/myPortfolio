@@ -4,10 +4,16 @@ import "./App.css";
 	function Square({value}) {
 		// return <button className="square">{value}</button>;
 		function handClicked() {
-			console.log("This has been clicked!");
+			console.log(value + " has been clicked!");
 		}
 
-		return <button className="square" onClick={handClicked}>{value}</button>;
+		return <>
+			<button className="square"
+			onClick={handClicked}
+			>
+				{value}
+			</button>
+		</>
 	}
 
 	export default function Board() {
