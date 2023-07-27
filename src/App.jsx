@@ -9,13 +9,7 @@ import "./App.css";
 			setValue('X');
 		}
 
-		return <>
-			<button className="square"
-			onClick={handClicked}
-			>
-				{value}
-			</button>
-		</>
+		return <button className="square" onClick={handClicked} > {value} </button>;
 	}
 
 	export default function Board() {
