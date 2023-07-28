@@ -43,7 +43,7 @@ export default function Myapp() {
 				<div className='m-2 h-32 bg-red-200 rounded-lg shadow-md'>Element 9</div>
 				<div className='m-2 h-32 bg-red-300 rounded-lg shadow-md'>Element 10</div>
 				<div className='m-2 h-32 bg-red-400 rounded-lg shadow-md'>Element 11</div>
-				<div className='m-2 col-start-1 col-end-4 h-32 bg-red-500 rounded-lg shadow-md'>Element 12</div>
+				<div className='m-2 h-32 bg-red-500 rounded-lg shadow-md'>Element 12</div>
 			</div>
 		</div>  
 	</>;
