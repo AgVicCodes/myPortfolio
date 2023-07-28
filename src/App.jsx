@@ -17,8 +17,7 @@ import Flex from './flex.jsx';
 function Nav() {
 	return (
 		<>
-			<Header></Header>
-			
+			<Header />
 
 			{/* Drawing shapes with CSS */}
 		</>
@@ -29,7 +28,7 @@ export default function Myapp() {
 	return <>
 		<Nav />
 		{/* <Grid /> */}
-		<Flex/>
+		<Flex />
 
 		<div className="Parent ">	
 			<div className="grid px-2 grid-cols-4 mx-auto">
