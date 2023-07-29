@@ -29,21 +29,22 @@ export default function Myapp() {
 	return <>
 		<Nav />
 		<Learn />
+		<Flex/>
 	</>;
 
-	// return <>
+	
+}
+
+
+
+
+// return <>
 	// 	<div className="Container">
 	// 		<Header />
 	// 		<Mytext />
 	// 		<button className="submitt">Click here to Begin!</button>
 	// 	</div>
 	// </> 
-}
-
-
-
-
-
 
 // import logo from './logo.svg';
 
