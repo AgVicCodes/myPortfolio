@@ -2,6 +2,7 @@ import './App.css';
 import './Todo.js';
 import Header from './Header.js';
 import Learn from './learn.jsx';
+import Flex from './flex.jsx';
 
 // function Mytext() {
 // 	return <h1>Welcome here!</h1>
