@@ -4,7 +4,7 @@ export default function Header() {
 	return (
 		<>
 			<header className="Parent header bg-neutral-400">
-				<nav className="flex sm:justify-center space-x-4">
+				{/* <nav className="flex sm:justify-center space-x-4">
 					{[
 						['Home', '/dashboard'],
 						['Team', '/team'],
@@ -15,7 +15,7 @@ export default function Header() {
 							<li><a href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</a></li>
 						</ul>
 					))}
-				</nav>
+				</nav> */}
 				<nav className="navbar">
 					<div className="flex uppercase justify-center bg-zinc-400">
 						<ul className='flex flex-rows mx-4 my-1 text-neutral-700'>
