@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Flex() {
   return (
-    <div className="Parent">	
-        <div className="flex px-2 flex-row justify-center">
+    <div className="Parent ">	
+        <div className="flex m-4 px-2 flex-row justify-center">
             <div className='w-32 m-2 h-32 bg-red-100 rounded-lg shadow-md'></div>
             <div className='w-32 m-2 h-32 bg-red-200 rounded-lg shadow-md'></div>
             <div className='w-32 m-2 h-32 bg-red-300 rounded-lg shadow-md'></div>
