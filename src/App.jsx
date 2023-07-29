@@ -1,7 +1,7 @@
 import './App.css';
 import './Todo.js';
 import Header from './Header.js';
-import Learn from './learn.jsx';
+import Grid from './grid.jsx';
 import Flex from './flex.jsx';
 
 // function Mytext() {
@@ -28,7 +28,7 @@ function Nav() {
 export default function Myapp() {
 	return <>
 		<Nav />
-		<Learn />
+		<Grid />
 		<Flex/>
 	</>;
 
