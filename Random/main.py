@@ -13,3 +13,5 @@ git checkout -b     = Create new branch.
 'branch-name'
 git merge           = Merge branch with master. 
 Vim (ProjectName)   = Opens a terminal to edit or view a file
+
+dgiuhjao
