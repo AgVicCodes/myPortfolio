@@ -1,3 +1,3 @@
 git init
 git commit
-git 
+git add -A, ., -u
