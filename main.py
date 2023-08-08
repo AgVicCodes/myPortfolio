@@ -11,5 +11,5 @@ git clone           = Copying a repository to your local directory
 git pull            = Get changes that has been made to the other projects by other developers.
 git checkout -b     = Create new branch.
 'branch-name'
-git merge           = Merge branch with master
-'branch-name'
+git merge           = Merge branch with master. 
+Vim (ProjectName)   = Opens a terminal to edit or view a file
