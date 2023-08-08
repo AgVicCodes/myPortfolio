@@ -1,3 +1,4 @@
+"""
 git init            = Initialising git
 git status          = Showing the changes made  
 git add -A, ., -u   = Adding a new or modified change prior to committing
@@ -9,4 +10,6 @@ git push -u origin  = Updating your code to github
 git clone           = Copying a repository to your local directory
 git pull            = Get changes that has been made to the other projects by other developers.
 git checkout -b     = Create new branch.
+'branch-name'
+git merge           = Merge branch with master
 'branch-name'
