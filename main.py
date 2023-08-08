@@ -5,4 +5,5 @@ git commit -m       = Saving your changes
 git diff            = Checking what changed
 git log             = List of all commits made to the project.
 git push -u origin  = Updating your code to github 
-master/main 
+                      master/main 
+git clone           = Copying a repository to your local directory
