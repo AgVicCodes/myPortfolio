@@ -8,3 +8,5 @@ git push -u origin  = Updating your code to github
                       master/main 
 git clone           = Copying a repository to your local directory
 git pull            = Get changes that has been made to the other projects by other developers.
+git checkout -b     = Create new branch.
+'branch-name'
