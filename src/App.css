@@ -1,6 +1,11 @@
 * {
 	color: #f7f7f7;
-	background: linear-gradient(to left, #117730, #2c4d2c) !important;
+	background: linear-gradient(to left, #eeeeee, #a5a5a5) !important;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 40px;
 }
 
 

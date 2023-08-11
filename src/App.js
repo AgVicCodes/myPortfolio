@@ -1,5 +1,11 @@
+import './App.css';
+
+
 export default function myapp() {
-	return <h1>Welcome here!</h1>
+	return <>
+		<div className="container"></div>
+			<h1 className="content-center">Welcome here!</h1>
+		</> 
 }
 
 
@@ -8,7 +14,6 @@ export default function myapp() {
 
 
 // import logo from './logo.svg';
-// import './App.css';
 
 // function App() {
 // 	return (
