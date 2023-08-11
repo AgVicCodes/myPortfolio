@@ -1,11 +1,22 @@
 import './App.css';
 
+function Mytext() {
+	return <h1>Welcome here!</h1>
+}
 
-export default function myapp() {
+function Username() {
+	return (
+		<h1>user.name</h1>
+	) 
+}
+
+export default function Myapp() {
 	return <>
-		<div className="container"></div>
-			<h1 className="content-center">Welcome here!</h1>
-		</> 
+		<div className="Container">
+			<Mytext />
+			<button className="submitt">Click here!</button>
+		</div>
+	</> 
 }
 
 

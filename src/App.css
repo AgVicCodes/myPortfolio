@@ -1,4 +1,4 @@
-* {
+body {
 	color: #f7f7f7;
 	background: linear-gradient(to left, #eeeeee, #a5a5a5) !important;
 }
@@ -6,6 +6,15 @@
 h1 {
 	font-weight: 400;
 	font-size: 40px;
+}
+
+.submitt {
+	border: 2px solid #7a0000;
+	padding: 3px;
+}
+
+.Container {
+	margin-left: 100px;
 }
 
 
