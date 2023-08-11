@@ -14,7 +14,7 @@ export default function Todo() {
 // 			<header>
 // 				<nav>
 // 					<ul>
-// 						<li>Home</li>jhvdihvk
+// 						<li>Home</li>
 // 						<li>Projects</li>
 // 						<li>About</li>
 // 						<li>Contact</li>
