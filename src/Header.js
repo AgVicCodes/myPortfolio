@@ -3,7 +3,7 @@ import React from 'react'
 export default function header() {
 	return (
 		<>
-			<button>Hello</button>saads vih
+			<button>Hello</button>
 			{/* <header>
 				<nav>
 					<ul>
