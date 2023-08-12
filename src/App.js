@@ -1,4 +1,5 @@
 import './App.css';
+import './Todo.js';
 
 function Mytext() {
 	return <h1>Welcome here!</h1>
