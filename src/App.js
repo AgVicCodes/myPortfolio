@@ -4,17 +4,17 @@ function Mytext() {
 	return <h1>Welcome here!</h1>
 }
 
-function Username() {
-	return (
-		<h1>user.name</h1>
-	) 
-}
+// function Username() {
+// 	return (
+// 		<h1>user.name</h1>
+// 	) 
+// }
 
 export default function Myapp() {
 	return <>
 		<div className="Container">
 			<Mytext />
-			<button className="submitt">Click here!</button>
+			<button className="submitt">Click here to Begin!</button>
 		</div>
 	</> 
 }
