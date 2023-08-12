@@ -1,9 +1,10 @@
 import './App.css';
 import './Todo.js';
+import './Header.js';
 
-function Mytext() {
-	return <h1>Welcome here!</h1>
-}
+// function Mytext() {
+// 	return <h1>Welcome here!</h1>
+// }
 
 // function Username() {
 // 	return (
@@ -11,13 +12,33 @@ function Mytext() {
 // 	) 
 // }
 
+function Header() {
+	return (
+		<>
+			<header>
+				<nav>
+					<ul>
+						<li>Home</li>
+						<li>Projects</li>
+						<li>About</li>
+						<li>Contact</li>
+					</ul>
+				</nav>
+			</header>
+		</>
+	);
+}
+
 export default function Myapp() {
-	return <>
-		<div className="Container">
-			<Mytext />
-			<button className="submitt">Click here to Begin!</button>
-		</div>
-	</> 
+	return <Header />
+
+	// return <>
+	// 	<div className="Container">
+	// 		<Header />
+	// 		<Mytext />
+	// 		<button className="submitt">Click here to Begin!</button>
+	// 	</div>
+	// </> 
 }
 
 
