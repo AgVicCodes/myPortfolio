@@ -1,6 +1,6 @@
 body {
 	color: #f7f7f7;
-	background: linear-gradient(to left, #eeeeee, #a5a5a5) !important;
+	background: linear-gradient(to right, #fac2c22d, #c7a8822d);
 }
 
 h1 {
@@ -18,19 +18,30 @@ h1 {
 }
 
 .navbar {
-	display: inline-block;
+	float: right;
 }
 
 nav ul {
-	display: inline-block;
+	display: flex;
 }
 
 nav ul li {
+	font-size: 13px;
 	display: inline-block;
 	margin-top: 20px;
 	margin-left: 50px;
+	color: #313131;
+	text-transform: uppercase;
+
 }
 
+nav ul li:hover {
+	font-weight: 700;
+	color: #1b1b1b;
+	transition: ease-in-out;
+	transition-duration: 500ms;
+	cursor: pointer;
+}
 
 
 /* .App {
