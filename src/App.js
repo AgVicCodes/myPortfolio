@@ -15,8 +15,8 @@ import './Header.js';
 function Header() {
 	return (
 		<>
-			<header>
-				<nav>
+			<header className="header">
+				<nav className="navbar">
 					<ul>
 						<li>Home</li>
 						<li>Projects</li>
