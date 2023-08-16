@@ -17,7 +17,7 @@ function Header() {
 		<>
 			<header className="header">
 				<nav className="navbar">
-					<ul>
+					<ul className=''>
 						<li>Home</li>
 						<li>Projects</li>
 						<li>About</li>
