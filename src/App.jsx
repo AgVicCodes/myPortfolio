@@ -40,7 +40,7 @@ function Nav() {
 				</nav>
 			</header> */}
 			
-			<div className="Parent">	
+			{/* <div className="Parent">	
 				<div className="flex px-2 flex-row justify-center">
 					<div className='w-32 m-2 h-32 bg-red-100 rounded-lg shadow-md'></div>
 					<div className='w-32 m-2 h-32 bg-red-200 rounded-lg shadow-md'></div>
@@ -53,14 +53,16 @@ function Nav() {
 					<div className='w-32 m-2 h-32 bg-red-800 rounded-lg shadow-md'></div>
 					<div className='w-32 m-2 h-32 bg-red-950 rounded-lg shadow-md'></div>
 				</div>
-			</div>
-			
-			{/* <div className="h-screen Parent">	
-				<div className="grid px-2">
-					<div className='w-32 h-32 bg-red-500 rounded-lg'></div>
-					<div className='w-16 h-16 bg-red-200 rounded-lg'></div>
-				</div>
 			</div> */}
+			
+			<div className="h-screen Parent">	
+				<div className="grid px-2 grid-cols-4">
+					<div className='w-auto m-2 h-32 bg-red-400 rounded-lg shadow-md'></div>
+					<div className='w-auto m-2 h-32 bg-red-400 rounded-lg shadow-md'></div>
+					{/* <div className='w-32 m-2 h-32 bg-red-400 rounded-lg shadow-md'></div>
+					<div className='w-32 m-2 h-32 bg-red-400 rounded-lg shadow-md'></div> */}
+				</div>
+			</div>
 
 			{/* Drawing shapes with CSS */}
 		</>
