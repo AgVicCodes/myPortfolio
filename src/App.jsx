@@ -17,12 +17,12 @@ function Header() {
 		<>
 			<header className="header">
 				<nav className="navbar">
-					<div className="flex uppercase justify-center bg-slate-700">
-						<ul className='flex flex-rows mx-4 my-1 text-neutral-300'>
-							<li className='text-sm m-4 hover:text-blue-500 hover:font-bold ease-in-out duration-200'>Home</li>
-							<li className='text-sm m-4 hover:text-blue-500 hover:font-bold ease-in-out duration-200'>Projects</li>
-							<li className='text-sm m-4 hover:text-blue-500 hover:font-bold ease-in-out duration-200'>About</li>
-							<li className='text-sm m-4 hover:text-blue-500 hover:font-bold ease-in-out duration-200'>Contact</li>
+					<div className="flex uppercase justify-center bg-zinc-400">
+						<ul className='flex flex-rows mx-4 my-1 text-neutral-700'>
+							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Home</li>
+							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Projects</li>
+							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>About</li>
+							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Contact</li>
 						</ul>
 					</div>
 				</nav>
