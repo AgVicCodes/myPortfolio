@@ -15,7 +15,7 @@ import './Header.js';
 function Nav() {
 	return (
 		<>
-			<div className="Parent header bg-slate-600">
+			<header className="Parent header bg-slate-600">
 				<nav className="navbar">
 					<div className="flex uppercase justify-center bg-zinc-400">
 						<ul className='flex flex-rows mx-4 my-1 text-neutral-700'>
@@ -26,7 +26,7 @@ function Nav() {
 						</ul>
 					</div>
 				</nav>
-			</div>
+			</header>
 		</>
 	);
 }
