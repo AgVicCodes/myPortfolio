@@ -17,11 +17,11 @@ function Header() {
 		<>
 			<header className="header">
 				<nav className="navbar">
-					<ul className=''>
-						<li>Home</li>
-						<li>Projects</li>
-						<li>About</li>
-						<li>Contact</li>
+					<ul>
+						<li className='text-sm'>Home</li>
+						<li className='text-sm'>Projects</li>
+						<li className='text-sm'>About</li>
+						<li className='text-sm'>Contact</li>
 					</ul>
 				</nav>
 			</header>
