@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function learn() {
+export default function Learn() {
 	return (
 		<>
 			<div className="h-screen Parent">	
