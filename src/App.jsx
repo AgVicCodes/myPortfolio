@@ -27,6 +27,8 @@ function Nav() {
 					</div>
 				</nav>
 			</header>
+
+			{/* Drawing shapes with CSS */}
 		</>
 	);
 }
