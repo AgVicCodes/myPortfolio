@@ -15,7 +15,19 @@ import './Header.js';
 function Nav() {
 	return (
 		<>
-			<header className="Parent header bg-slate-600">
+			{/* <header className="Parent header bg-neutral-400">
+				<nav className="flex sm:justify-center space-x-4">
+					{[
+						['Home', '/dashboard'],
+						['Team', '/team'],
+						['Projects', '/projects'],
+						['Reports', '/reports'],
+					].map(([title, url]) => (
+						<ul className='my-4'>
+							<li><a href={url} className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{title}</a></li>
+						</ul>
+					))}
+				</nav>
 				<nav className="navbar">
 					<div className="flex uppercase justify-center bg-zinc-400">
 						<ul className='flex flex-rows mx-4 my-1 text-neutral-700'>
@@ -26,7 +38,14 @@ function Nav() {
 						</ul>
 					</div>
 				</nav>
-			</header>
+			</header> */}
+			
+			<div className="h-screen Parent">	
+				<div className="container px-2">
+					<div className='w-32 h-32 bg-red-500 rounded-lg'></div>
+					<div className='w-16 h-16 bg-red-200 rounded-lg'></div>
+				</div>
+			</div>
 
 			{/* Drawing shapes with CSS */}
 		</>
