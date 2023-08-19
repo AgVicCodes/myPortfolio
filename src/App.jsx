@@ -42,8 +42,8 @@ function Nav() {
 			
 			<div className="h-screen Parent">	
 				<div className="container px-2">
-					<div className='w-32 h-32 bg-red-500 rounded-lg'></div>
-					<div className='w-16 h-16 bg-red-200 rounded-lg'></div>
+					<div className='relative w-32 h-32 bg-red-500 rounded-lg'></div>
+					<div className='absolute w-16 h-16 bg-red-200 rounded-lg'></div>
 				</div>
 			</div>
 
