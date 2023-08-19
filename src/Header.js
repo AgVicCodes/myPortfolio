@@ -3,7 +3,8 @@ import React from 'react'
 export default function header() {
 	return (
 		<>
-			<header>
+			<button>Hello</button>
+			{/* <header>
 				<nav>
 					<ul>
 						<li>Home</li>
@@ -12,7 +13,7 @@ export default function header() {
 						<li>Contact</li>
 					</ul>
 				</nav>
-			</header>
+			</header> */}
 		</>
 	)
 }

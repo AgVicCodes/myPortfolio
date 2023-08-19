@@ -12,10 +12,10 @@ import './Header.js';
 // 	) 
 // }
 
-function Header() {
+function Nav() {
 	return (
 		<>
-			<header className="header">
+			<div className="Parent header bg-slate-600">
 				<nav className="navbar">
 					<div className="flex uppercase justify-center bg-zinc-400">
 						<ul className='flex flex-rows mx-4 my-1 text-neutral-700'>
@@ -26,13 +26,13 @@ function Header() {
 						</ul>
 					</div>
 				</nav>
-			</header>
+			</div>
 		</>
 	);
 }
 
 export default function Myapp() {
-	return <Header />
+	return <Nav />
 
 	// return <>
 	// 	<div className="Container">
