@@ -1,6 +1,7 @@
 import './App.css';
 import './Todo.js';
 import Header from './header.js';
+import Container from './container.jsx';
 // import Grid from './grid.jsx';
 // import Flex from './flex.jsx';
 
@@ -27,6 +28,7 @@ function Nav() {
 export default function Myapp() {
 	return <>
 		<Nav />
+		<Container />
 		{/* <Grid /> */}
 		{/* <Flex /> */}
 		
