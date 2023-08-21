@@ -1,7 +1,7 @@
 import './App.css';
 import './Todo.js';
-import Header from './Header.js';
-// import Grid from './grid.jsx';
+import Header from './header.js';
+import Grid from './grid.jsx';
 import Flex from './flex.jsx';
 
 // function Mytext() {
@@ -27,25 +27,9 @@ function Nav() {
 export default function Myapp() {
 	return <>
 		<Nav />
-		{/* <Grid /> */}
+		<Grid />
 		<Flex />
-
-		<div className="Parent ">	
-			<div className="grid px-2 grid-cols-4 mx-auto">
-				<div className='m-2 h-32 bg-red-200 rounded-lg px-4 shadow-md'>Element 1</div>
-				<div className='m-2 h-32 bg-red-300 rounded-lg shadow-md'>Element 2</div>
-				<div className='m-2 h-32 bg-red-400 rounded-lg shadow-md'>Element 3</div>
-				<div className='m-2 h-32 bg-red-500 rounded-lg shadow-md'>Element 4</div>
-				<div className='m-2 h-32 bg-red-200 rounded-lg shadow-md'>Element 5</div>
-				<div className='m-2 h-32 bg-red-300 rounded-lg shadow-md'>Element 6</div>
-				<div className='m-2 h-32 bg-red-400 rounded-lg shadow-md'>Element 7</div>
-				<div className='m-2 h-32 bg-red-500 rounded-lg shadow-md'>Element 8</div>
-				<div className='m-2 h-32 bg-red-200 rounded-lg shadow-md'>Element 9</div>
-				<div className='m-2 h-32 bg-red-300 rounded-lg shadow-md'>Element 10</div>
-				<div className='m-2 h-32 bg-red-400 rounded-lg shadow-md'>Element 11</div>
-				<div className='m-2 h-32 bg-red-500 rounded-lg shadow-md'>Element 12</div>
-			</div>
-		</div>  
+		
 	</>;
 
 	
@@ -54,13 +38,10 @@ export default function Myapp() {
 
 
 
-// return <>
-	// 	<div className="Container">
-	// 		<Header />
-	// 		<Mytext />
-	// 		<button className="submitt">Click here to Begin!</button>
-	// 	</div>
-	// </> 
+
+/* <div className="Container">
+	<button className="submitt">Click here to Begin!</button>
+</div> */
 
 // import logo from './logo.svg';
 
