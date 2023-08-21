@@ -1,7 +1,8 @@
 import './App.css';
 import './Todo.js';
+import Border from './border';
 import Header from './header.js';
-import Container from './container.jsx';
+// import Container from './container.jsx';
 // import Grid from './grid.jsx';
 // import Flex from './flex.jsx';
 
@@ -28,7 +29,8 @@ function Nav() {
 export default function Myapp() {
 	return <>
 		<Nav />
-		<Container />
+		<Border />
+		{/* <Container /> */}
 		{/* <Grid /> */}
 		{/* <Flex /> */}
 		
@@ -45,7 +47,7 @@ export default function Myapp() {
 	<button className="submitt">Click here to Begin!</button>
 </div> */
 
-// import logo from './logo.svg';
+
 
 // function App() {
 // 	return (
