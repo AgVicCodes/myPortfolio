@@ -3,7 +3,7 @@ import React from 'react'
 export default function Header() {
 	return (
 		<>
-			<header className="Parent header bg-neutral-400">
+			<header className="Parent header">
 				{/* <nav className="flex sm:justify-center space-x-4">
 					{[
 						['Home', '/dashboard'],
@@ -17,8 +17,8 @@ export default function Header() {
 					))}
 				</nav> */}
 				<nav className="navbar">
-					<div className="flex uppercase justify-center bg-zinc-100">
-						<ul className='flex flex-rows mx-4 my-2 text-neutral-700'>
+					<div className="flex uppercase justify-center bg-gray-0 shadow-md">
+						<ul className='flex flex-rows mx-4 my-2 text-neutral-500 font-semibold'>
 							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Home</li>
 							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Projects</li>
 							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>About</li>
