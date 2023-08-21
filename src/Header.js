@@ -17,7 +17,7 @@ export default function Header() {
 					))}
 				</nav> */}
 				<nav className="navbar">
-					<div className="flex uppercase justify-center bg-gray-0 shadow-md">
+					<div className="flex uppercase justify-center bg-neutral-100 shadow-md">
 						<ul className='flex flex-rows mx-4 my-2 text-neutral-500 font-semibold'>
 							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Home</li>
 							<li className='text-sm m-4 hover:text-gray-900 hover:font-bold ease-in-out duration-300'>Projects</li>
