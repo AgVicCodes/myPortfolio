@@ -1,8 +1,8 @@
 import './App.css';
 import './Todo.js';
 import Header from './header.js';
-import Grid from './grid.jsx';
-import Flex from './flex.jsx';
+// import Grid from './grid.jsx';
+// import Flex from './flex.jsx';
 
 // function Mytext() {
 // 	return <h1>Welcome here!</h1>
@@ -27,8 +27,8 @@ function Nav() {
 export default function Myapp() {
 	return <>
 		<Nav />
-		<Grid />
-		<Flex />
+		{/* <Grid /> */}
+		{/* <Flex /> */}
 		
 	</>;
 
