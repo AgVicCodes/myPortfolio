@@ -1,10 +1,10 @@
 import './App.css';
 import './Todo.js';
-import Border from './border';
-import Header from './header.js';
-// import Container from './container.jsx';
-// import Grid from './grid.jsx';
-// import Flex from './flex.jsx';
+import Border from './components/border';
+import Header from './components/header.js';
+// import Container from './components/container.jsx';
+// import Grid from './components/grid.jsx';
+// import Flex from './components/flex.jsx';
 
 // function Mytext() {
 // 	return <h1>Welcome here!</h1>
