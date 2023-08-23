@@ -8,10 +8,20 @@ function Square() {
     const[value, setValue] = useState(null);
 
     function handleClick() {
-        setValue(myChar);
+        setValue(myChar); 
+    }
+    
+    function clearBoard() {
+        if (myChar) {
+            setValue(null);
+            // alert("I'm alive");
+            // value = null;
+        }
     }
     
     return <button onClick={handleClick} className="square">{value}</button>  
+    
+    
 }
 
 function setChar() {
@@ -22,12 +32,7 @@ function setChar() {
     }
 }
 
-function clearBoard() {
-    if (myChar) {
-        // alert("I'm alive");
-        // value = null;
-    }
-}
+
 
 
 
