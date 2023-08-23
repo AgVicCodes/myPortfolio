@@ -4,6 +4,12 @@ import { useState } from "react";
 var myChar = "X";
 // var nextChar = "Y";
 
+function clearBoard() {
+    if (myChar) {
+        setValue(null);
+    }
+}
+
 function Square() {
     const[value, setValue] = useState(null);
 
@@ -11,16 +17,13 @@ function Square() {
         setValue(myChar); 
     }
     
-    function clearBoard() {
-        if (myChar) {
-            setValue(null);
-        }
-    }
+    
 
     return <button onClick={handleClick} className="square">{value}</button>  
     
     
 }
+
 
 function setChar() {
     if (myChar === 'X') {
