@@ -9,7 +9,6 @@ function clearBoard() {
         setValue(null);
     }
 }
-
 function Square() {
     const[value, setValue] = useState(null);
 
