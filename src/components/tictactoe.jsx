@@ -14,9 +14,11 @@ function Square() {
     function clearBoard() {
         if (myChar) {
             setValue(null);
+            // alert("I'm alive");
+            // value = null;
         }
     }
-
+    
     return <button onClick={handleClick} className="square">{value}</button>  
     
     
