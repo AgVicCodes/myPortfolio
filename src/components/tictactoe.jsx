@@ -28,5 +28,7 @@ export default function Board() {
         <Square />
         <Square />
     </div>
+
+    <button className="w-32 mt-4 h-16 shadow-sm bg-slate-200 rounded-md">Swap Letters</button>
     </>
 }
