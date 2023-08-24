@@ -1,36 +1,48 @@
-import { useState } from 'react';
+// import { useState } from 'react';
+import Board from "./components/tictactoe";
 import "./App.css";
 
-	function Square() {
-		// return <button className="square">{value}</button>;
-		const [value, setValue] = useState(null);
+export default function Myapp() {
+	return <>
+		<Board />
+		{/* <Nav /> */}
+		{/* <Container /> */}
+		{/* <Grid /> */}
+		{/* <Flex /> */}
+	
+	</>;
+}
+
+	// function Square() {
+	// 	// return <button className="square">{value}</button>;
+	// 	const [value, setValue] = useState(null);
 		
-		function handClicked() {
-			setValue('X');
-		}
+	// 	function handClicked() {
+	// 		setValue('X');
+	// 	}
 
-		return <button className="square" onClick={handClicked} > {value} </button>;
-	}
+	// 	return <button className="square" onClick={handClicked} > {value} </button>;
+	// }
 
-	export default function Board() {
-		return <>
-			<div className="board-row">
-					<Square />
-					<Square />
-					<Square />
-			</div>
-			<div className="board-row">
-					<Square />
-					<Square />
-					<Square />
-			</div>			
-			<div className="board-row">
-					<Square />
-					<Square />
-					<Square />
-			</div>					
-		</>
-	}
+	// export default function Board() {
+	// 	return <>
+	// 		<div className="board-row">
+	// 				<Square />
+	// 				<Square />
+	// 				<Square />
+	// 		</div>
+	// 		<div className="board-row">
+	// 				<Square />
+	// 				<Square />
+	// 				<Square />
+	// 		</div>			
+	// 		<div className="board-row">
+	// 				<Square />
+	// 				<Square />
+	// 				<Square />
+	// 		</div>					
+	// 	</>
+	// }
 
 // 1
 // 2
@@ -188,15 +200,7 @@ import "./App.css";
 // 	);
 // }
 
-// export default function Myapp() {
-// 	return <>
-// 		<Nav />
-// 		<Border />
-// 		{/* <Container /> */}
-// 		{/* <Grid /> */}
-// 		{/* <Flex /> */}
-		
-// 	</>;
+
 
 	
 // }
