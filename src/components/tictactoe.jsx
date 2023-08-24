@@ -1,4 +1,3 @@
-import { clear } from "@testing-library/user-event/dist/clear";
 import React from "react";
 import { useState } from "react";
 
@@ -25,7 +24,8 @@ function setChar() {
 
 function clearBoard() {
     if (myChar) {
-        console.log("I'm alive");
+        // alert("I'm alive");
+        // value = null;
     }
 }
 
@@ -49,7 +49,7 @@ export default function Board() {
         <Square />
     </div>
 
-    <button onClick={setChar} className="w-32 mt-4 h-16 shadow-sm bg-slate-200 rounded-md">Swap Letters</button>
+    <button onClick={setChar} className="w-32 mt-4 mr-4 h-16 shadow-sm bg-slate-200 rounded-md">Swap Letters</button>
     <button onClick={clearBoard} className="w-32 mt-4 h-16 shadow-sm bg-slate-200 rounded-md">Clear Board</button>
     </>
 }
