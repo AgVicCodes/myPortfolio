@@ -6,7 +6,7 @@ export default function Container() {
 		<div className="container">
 			<img src="./logo192.png" alt="React logo" className="w-52 float-right" />
 			<img src="./logo192.png" alt="React logo" className="w-64 float-left" />
-			<div className="px-4 clear-right">
+			<div className="px-4 clear-right">Edited 
 				<p>
 					One of your dependencies, babel-preset-react-app, is importing the
 					"@babel/plugin-proposal-private-property-in-object" package without        
