@@ -15,4 +15,4 @@ export default function Border() {
             <input className='w-64 h-10 border-solid rounded-md shadow-2xl border-2' type="text" name="name" id="username" />
         </div>
     </>
-}
+}Edited JSX
