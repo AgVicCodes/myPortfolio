@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function Todo() {
-  return (
+	return (
+		<div>Todo</div>
+	)
 }
-<div>Todo</div>
-  )
-}
+
 
 // import React from 'react'
 
