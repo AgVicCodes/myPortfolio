@@ -38,10 +38,10 @@ export default function Board() {
     <div className="board-row">
         <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
         <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
-        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+        <Square value={squares[5]} onSquareClick={() => handleClick()} />
     </div>
     <div className="board-row">
-        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
+        <Square value={squares[6]} onSquareClick={() => handleClick()} />
         <Square value={squares[7]} onSquareClick={() => handleClick()} />
         <Square value={squares[8]} onSquareClick={() => handleClick()} />
     </div>
