@@ -16,7 +16,8 @@ function Square({value, onSquareClick}) {
 
 
 
-export default function Board() {
+export default function Board() {   
+    const [xIsNext, setxIsNext] = useState(true);
     const [squares, setSquares] = useState(Array(9).fill(null)); 
 
     // function handleFirstClick() {
@@ -25,8 +26,19 @@ export default function Board() {
 
     function handleClick(i) {
         const nextSquares = squares.slice();
-        nextSquares[i] = "X";
+        
+        if (squares[i]) {
+            return;
+        }
+        
+        if (xIsNext) {
+            nextSquares[i] = "X";
+        } else {
+            nextSquares[i] = "O";
+        }
+        
         setSquares(nextSquares);
+        setxIsNext(!xIsNext);
     }
 
     return <>
