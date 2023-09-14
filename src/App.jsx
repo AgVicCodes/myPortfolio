@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-// import Board from "./components/tictactoe";
 import { PropExample } from "./components/propExample";
 import "./App.css";
 
@@ -14,6 +12,49 @@ export default function Myapp() {
 	
 	</>;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { useState } from 'react';
+// import Board from "./components/tictactoe";
 	// 	// return <button className="square">{value}</button>;
 	// 	const [value, setValue] = useState(null);
 		
