@@ -1,10 +1,12 @@
 // import { useState } from 'react';
-import Board from "./components/tictactoe";
+// import Board from "./components/tictactoe";
+import { PropExample } from "./components/propExample";
 import "./App.css";
 
 export default function Myapp() {
 	return <>
-		<Board />
+		<PropExample />
+		{/* <Board /> */}
 		{/* <Nav /> */}
 		{/* <Container /> */}
 		{/* <Grid /> */}
