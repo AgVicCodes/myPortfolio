@@ -1,5 +1,5 @@
 import React from 'react';
-import "./image.jpg";
+// import logo from "./components/image.jpg";
 
 // Reading props inside child component
 function Button ({size, color, text="yellow", bdr}) {
@@ -25,6 +25,9 @@ function Card ({children}) {
     </>
 }
 
+// Passing prop to components
+
+
 export function PropExample() {
     return <>
         <h1>Hello World!</h1>
@@ -46,7 +49,7 @@ export function PropExample() {
         />
 
         <Card>
-            <img src="./image.jpg" alt="A chart" />
+    		{/* <img src={logo} alt="A car" /> */}
         </Card>
     </>
 }
