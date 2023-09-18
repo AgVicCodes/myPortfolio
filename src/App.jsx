@@ -1,8 +1,8 @@
-import Gallery from "./components/propExample";
 import "./App.css";
+import { Checker } from "./components/propExample";
 
 export default function Myapp() {
 	return <>
-		<Gallery />
+		<Checker />
 	</>;
 }
