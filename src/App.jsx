@@ -1,8 +1,8 @@
 import "./App.css";
-import { Checker } from "./components/propExample";
+import Conditional from "./components/conditional";
 
 export default function Myapp() {
 	return <>
-		<Checker />
+		<Conditional />
 	</>;
 }
