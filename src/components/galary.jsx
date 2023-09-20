@@ -1,5 +1,5 @@
 // import { getFinalState } from './processQueue.js';
-function increment(n) {
+function increment(n) {Edited JSX
     return n + 1;
 }
 
