@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react';Edited JSX
 import { useState } from 'react';
 
 function IsItChecked ({name, liState = "Status: ❎"}) {
