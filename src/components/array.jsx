@@ -1,5 +1,5 @@
 export default function array() {
     return (
-        <div>array</div>
+        <div>array</div>Edited JSX
     )
 }
