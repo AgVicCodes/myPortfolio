@@ -1,8 +1,8 @@
 import "./App.css";
-import Conditional from "./components/conditional";
+import List from "./components/list";
 
 export default function Myapp() {
 	return <>
-		<Conditional />
+		<List />
 	</>;
 }
