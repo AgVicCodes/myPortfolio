@@ -1,8 +1,8 @@
 import "./App.css";
-import List from "./components/list";
+import Interact from "./components/interactivity";
 
 export default function Myapp() {
-	return <>
-		<List />
-	</>;
+	return (
+		<Interact />
+	)
 }
