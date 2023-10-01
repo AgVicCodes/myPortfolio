@@ -23,7 +23,11 @@ const people = [
 
 
 export default function List() {
-    const listItems = people.map(person => <li>
+    // const listItems = people.map(person => <li>
+    //     {person.init}: {person.profession}
+    // </li>);
+    const physicists = people.filter(person => person.profession === "Physicist");
+    const listItems = physicists.map(person => <li>
         {person.init}: {person.profession}
     </li>);
     return <>
@@ -40,7 +44,10 @@ export default function List() {
 
 
 
-
+// const physicists = people.filter(person => person.profession === "Physicist");
+// const listItems = physicists.map(person => <li>
+//     {person.init}: {person.profession}
+// </li>);
 
 /*const people = [
     "Mary Slessor: Chemist",
