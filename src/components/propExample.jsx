@@ -25,32 +25,33 @@ function IsItChecked ({name, liState = "Status: ❎"}) {
 }
 
 export function Checker() {
-    return <>
+    return (<>
         <ul>
             <li>
                 <IsItChecked 
                     name="Packed my books"
-                    // isCheck={true}
+                    isCheck={true}
                 />
             </li>
             <li>
                 <IsItChecked 
                     name="Packed my books"
-                    // isCheck={false}
+                    isCheck={false}
                 />
             </li>
             <li>
                 <IsItChecked 
                     name="Packed my books"
-                    // isCheck={true}
+                    isCheck={true}
                 />
             </li>
             <li>
                 <IsItChecked 
                     name="Packed my books"
-                    // isCheck={true}
+                    isCheck={true}
                 />
             </li>
         </ul>
     </>
+    );
 }
