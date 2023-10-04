@@ -1,10 +1,9 @@
 import "./App.css";
-import Interact from "./components/interactivity";
-// import { Checker } from "./components/propExample";
+import State from "./components/state";
 
 export default function Myapp() {
 	return (<>
-		<Interact />
+		<State />
 		{/* <Checker /> */}
 	</>
 	);
