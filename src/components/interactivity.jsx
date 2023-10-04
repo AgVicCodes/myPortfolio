@@ -1,10 +1,49 @@
-// Event Propagation
+// Stopping Propagation/bubbling
+
+function Button ({onClick, children}) {
+    return <>
+        <button onClick={e => {
+            e.stopPropagation();
+            onClick();
+        }}
+        className="m-4 p-4 bg-blue-700 border-2 border-blue-900 rounded-md hover:bg-blue-800">
+            {children}
+        </button>
+    </>
+}
+
+export default function Interact () {
+    return (
+        <div onClick={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg">
+            <Button onClick={() => alert("Clicked Video")}>
+                Video
+            </Button>
+            <br />
+            <Button onClick={() => alert("Clicked Audio")}>
+                Audio
+            </Button>
+        </div>
+    );
+}
 
 
+// Event Propagation/bubbling
 
-
-
-
+// export default function Interact () {
+//     return (
+//         <div onClick={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg">
+//             <button onClick={() => alert("Clicked Video")} 
+//             className="m-4 p-4 bg-blue-700 border-2 border-blue-900 rounded-md hover:bg-blue-800">
+//                 Video
+//             </button>
+//             <br />
+//             <button onClick={() => alert("Clicked Audio")} 
+//             className="m-4 p-4 bg-blue-500 border-2 border-blue-900 rounded-md hover:bg-blue-600">
+//                 Audio
+//             </button>
+//         </div>
+//     );
+// }
 
 // // Passing event handlers as props
 // function Button({ onClick, children }) {
