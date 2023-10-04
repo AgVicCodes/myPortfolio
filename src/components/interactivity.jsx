@@ -1,31 +1,90 @@
-// Stopping Propagation/bubbling
+// To Preventing default behaviour
 
-function Button ({onClick, children}) {
+export default function Interact () {
     return <>
-        <button onClick={e => {
-            e.stopPropagation();
-            onClick();
-        }}
-        className="m-4 p-4 bg-blue-700 border-2 border-blue-900 rounded-md hover:bg-blue-800">
-            {children}
-        </button>
+        <form action="POST" onSubmit={e => {
+            e.preventDefault();
+            alert("Submitting!");
+            }}>
+            <input  className="m-4 p-4 bg-neutral-100 border-neutral-700 border-2 rounded-md font-black text-xl" type="text" />
+            <button className="m-4 p-4 bg-neutral-500 border-neutral-700 border-2 rounded-md">Send</button>
+        </form>
     </>
 }
 
-export default function Interact () {
-    return (
-        <div onClick={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg">
-            <Button onClick={() => alert("Clicked Video")}>
-                Video
-            </Button>
-            <br />
-            <Button onClick={() => alert("Clicked Audio")}>
-                Audio
-            </Button>
-        </div>
-    );
-}
 
+
+
+
+
+// Default behaviour
+
+// export default function Interact () {
+//     return <>
+//         <form action="POST" onSubmit={() => alert("Submitting!")}>
+//             <input className="m-4 p-4 bg-neutral-100 border-neutral-700 border-2 rounded-md" type="text" />
+//             <button className="m-4 p-4 bg-neutral-500 border-neutral-700 border-2 rounded-md">Send</button>
+//         </form>
+//     </>
+// }
+
+
+// // Stopping Propagation/bubbling
+
+// function Button ({onClick, children}) {
+//     return <>
+//         <button onClick={e => {
+//             e.stopPropagation();
+//             onClick();
+//         }}
+//         className="m-4 p-4 bg-slate-500 border-2 border-slate-800 rounded-md hover:bg-slate-600">
+//             {children}
+//         </button>
+//     </>
+// }
+
+// export default function Interact () {
+//     return (
+//         <div onClick={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg">
+//         {/* <div onClickCapture={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg"> */}
+//             <Button onClick={() => alert("Clicked Video")}>
+//                 Video
+//             </Button>
+//             <br />
+//             <Button onClick={() => alert("Clicked Audio")}>
+//                 Audio
+//             </Button>
+//         </div>
+//     );
+// }
+
+// // Stopping Propagation/bubbling
+
+// function Button ({onClick, children}) {
+//     return <>
+//         <button onClick={e => {
+//             e.stopPropagation();
+//             onClick();
+//         }}
+//         className="m-4 p-4 bg-blue-700 border-2 border-blue-900 rounded-md hover:bg-blue-800">
+//             {children}
+//         </button>
+//     </>
+// }
+
+// export default function Interact () {
+//     return (
+//         <div onClick={() => alert("Clicked Toolbar")} className="p-4 bg-neutral-200 border-slate-500 border-2 rounded-lg">
+//             <Button onClick={() => alert("Clicked Video")}>
+//                 Video
+//             </Button>
+//             <br />
+//             <Button onClick={() => alert("Clicked Audio")}>
+//                 Audio
+//             </Button>
+//         </div>
+//     );
+// }
 
 // Event Propagation/bubbling
 
