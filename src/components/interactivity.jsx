@@ -1,36 +1,47 @@
-// Passing event handlers as props
-function Button({ onClick, children }) {
-    return (<>
-        <button className="bg-green-600 hover:bg-green-700 border-2 border-green-900 rounded-md mb-2 p-4" onClick={onClick}>
-            {children}
-        </button>
-    </>
-    );
-}
+// Event Propagation
 
-// function PlayButtons () {
 
-function PlayVideo ({message}) {
 
-    function handleClick () {
-        alert(message);
-    }
 
-    return <Button onClick={handleClick}>Video</Button>
-}
 
-function ReadAudio () {
-    return <Button onClick={() => alert("Read Audiobook")}>Audio</Button>
-}
+
+
+// // Passing event handlers as props
+// function Button({ onClick, children }) {
+//     return (<>
+//         <button className="bg-green-600 hover:bg-green-700 border-2 border-green-900 rounded-md mb-2 p-4" onClick={onClick}>
+//             {children}
+//         </button>
+//     </>
+//     );
+// }
+// // If a specific event handler isn't calling a recurring function like alert you can pass it directly
+// // e.g onClick={handleClick} vs onClick={() => alert("I clicked!")}
+
+
+// // function PlayButtons () {
+
+// function PlayVideo ({message}) {
+
+//     function handleClick () {
+//         alert(message);
+//     }
+
+//     return <Button onClick={handleClick}>Video</Button>
 // }
 
-export default function Interact () {
-    return (<>
-        <PlayVideo message="Playing Video" /><br />
-        <ReadAudio message="Reading Audiobook" />
-    </>
-);
-}
+// function ReadAudio () {
+//     return <Button onClick={() => alert("Read Audiobook")}>Audio</Button>
+// }
+// // }
+
+// export default function Interact () {
+//     return (<>
+//         <PlayVideo message="Playing Video" /><br />
+//         <ReadAudio message="Reading Audiobook" />
+//     </>
+// );
+// }
 
 
 
