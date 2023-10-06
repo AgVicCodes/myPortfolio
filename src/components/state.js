@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 function buttonState () {
-    const currentState = useState[null];
+    const currentState = useState;
 }
 
 export default function State() {
