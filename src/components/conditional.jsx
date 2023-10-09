@@ -1,4 +1,4 @@
-function Drink({ bevName }) {Edited JSX
+function Drink({ bevName }) {
 	return (
 		<section>
 			<h1>{bevName}</h1>
