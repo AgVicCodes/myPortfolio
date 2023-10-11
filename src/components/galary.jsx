@@ -88,7 +88,7 @@
 // }
 
 
-{/* <button onClick={handleNext}>Next</button> */}
+// {/* <button onClick={handleNext}>Next</button> */}
 
 
 // export default function Gallery() {
