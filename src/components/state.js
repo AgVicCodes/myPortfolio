@@ -6,7 +6,7 @@ function buttonState () {
 
 export default function State() {
     return (<>
-        <div>state</div>
+        <button className="bg-gree-600 hover:bg-green-800 border-md rounded-md">Click me</button>
     </>
     );
 }
