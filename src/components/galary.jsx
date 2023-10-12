@@ -5,6 +5,142 @@
 
 
 
+
+
+
+
+
+
+
+
+
+// import { useState } from 'react';
+
+// export default function TrafficLight() {
+//     const [walk, setWalk] = useState(true);
+
+//     function handleClick() {
+//         setWalk(!walk);
+//         alert( walk ? "Stop is next!" : "Walk is next!")
+//         // if(walk) {
+//         //     alert("Stop is next!")
+//         // } else {
+//         //     alert("Walk is next!")
+//         // }
+//     }
+
+//     return (
+//         <>
+//             <button onClick={handleClick}>
+//                 Change to {walk ? 'Stop' : 'Walk'}
+//             </button>
+//             <h1 style={{
+//                 color: walk ? 'darkgreen' : 'darkred'
+//             }}>
+//                 {walk ? 'Walk' : 'Stop'}
+//             </h1>
+//         </>
+//     );
+// }
+
+
+// export default function FeedbackForm() { 
+
+//     function handleClick() {
+//         const name = (prompt("What is your name?"));
+//         alert(`Hello, ${name}!`);
+//     }
+     
+//     return (
+//         <button onClick={handleClick}>
+//             Greet
+//         </button>
+//     );
+// }
+
+// Removing unnecessary state
+
+// import { useState } from 'react';
+
+// export default function FeedbackForm() {
+//     const [name, setName] = useState("");
+
+//     function handleClick() {
+//         setName(prompt("What is your name?"));
+//         alert(`Hello, ${name}!`);
+//     }
+    
+    
+//     return (
+//         <button onClick={handleClick}>
+//             Greet
+//         </button>
+//     );
+// }
+
+
+
+
+
+// Hooks can only be called at the top level of the component function. Here, 
+// the first isSent definition follows this rule, but the message definition 
+// is nested in a condition.
+
+// import { useState } from 'react';
+
+// export default function FeedbackForm() {
+//   const [isSent, setIsSent] = useState(false);
+//   const [message, setMessage] = useState('');
+
+//   if (isSent) {
+//     return <h1>Thank you!</h1>;
+//   } else {
+//     return (
+//       <form onSubmit={e => {
+//         e.preventDefault();
+//         alert(`Sending: "${message}"`);
+//         setIsSent(true);
+//       }}>
+//         <textarea
+//           placeholder="Message"
+//           value={message}
+//           onChange={e => setMessage(e.target.value)}
+//         />
+//         <br />
+//         <button type="submit">Send</button>
+//       </form>
+//     );
+//   }
+// }
+
+
+
+// import { useState } from 'react';
+
+// export default function FeedbackForm() {
+//     const [isSent, setIsSent] = useState(false);
+//     const [message, setMessage] = useState('');
+//     if (isSent) {
+//         return <h1>Thank you!</h1>;
+//     } else {
+//         // eslint-disable-next-line
+//     return (
+//         <form onSubmit={e => {
+//             e.preventDefault();
+//             alert(`Sending: "${message}"`);
+//             setIsSent(true);}}>
+//             <textarea
+//             placeholder="Message"
+//             value={message}
+//             onChange={e => setMessage(e.target.value)}/>
+//             <br />
+//             <button type="submit">Send</button>
+//         </form>
+//     );
+//   }
+// }
+
+
 // import { useState } from "react";
 
 // export default function Form() {
