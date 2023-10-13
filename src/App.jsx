@@ -1,5 +1,5 @@
 import "./App.css";
-import App from "./components/array";
+import App from "./components/array";Edited JSX
 
 export default function Myapp() {
 	return (<>
