@@ -1,34 +1,9 @@
 // import { getFinalState } from './processQueue.js';
 function increment(n) {
-  return n + 1;
+    return n + 1;
 }
 
 increment.toString = () => 'n => n+1';
-
-function getFinalState(baseState, queue) {
-    let finalState = baseState;
-  
-    for (let update of queue) {
-      if (typeof update === 'function') {
-        // Apply the updater function.
-        finalState = update(finalState);
-      } else {
-        // Replace the next state.
-        finalState = update;
-      }
-    }
-  
-    return finalState;
-  }
-  
-
-// export function getFinalState(baseState, queue) {
-//     let finalState = baseState;
-  
-//     // TODO: do something with the queue...
-  
-//     return finalState;
-// }  
 
 function TestCase({
     baseState,
@@ -59,23 +34,41 @@ function TestCase({
     );
 }
 
+function getFinalState(baseState, queue) {
+    let finalState = baseState;
+  
+    for (let update of queue) {
+        if (typeof update === 'function') {
+            // Apply the updater function.
+            finalState = update(finalState);
+        } else {
+            // Replace the next state.
+            finalState = update;
+        }
+    }
+  
+    return finalState;
+}
+  
+
+
 export default function App() {
     return (
         <>
             <TestCase
-                baseState={0}
-                queue={[1, 1, 1]}
-                expected={1}
+                baseState={1}
+                queue={[2, 3, 5]}
+                expected={5}
             />
             <hr />
             <TestCase
-                baseState={0}
+                baseState={5}
                 queue={[
                 increment,
                 increment,
                 increment
                 ]}
-                expected={3}
+                expected={8}
             />
             <hr />
             <TestCase
@@ -101,6 +94,13 @@ export default function App() {
 }
 
 
+// export function getFinalState(baseState, queue) {
+//     let finalState = baseState;
+  
+//     // TODO: do something with the queue...
+  
+//     return finalState;
+// }  
 
 
 
