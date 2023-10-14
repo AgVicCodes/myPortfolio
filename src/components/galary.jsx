@@ -2,9 +2,10 @@
 function increment(n) {
   return n + 1;
 }
+
 increment.toString = () => 'n => n+1';
 
-export function getFinalState(baseState, queue) {
+function getFinalState(baseState, queue) {
     let finalState = baseState;
   
     for (let update of queue) {
@@ -28,6 +29,35 @@ export function getFinalState(baseState, queue) {
   
 //     return finalState;
 // }  
+
+function TestCase({
+    baseState,
+    queue,
+    expected
+    }) {
+
+    const actual = getFinalState(baseState, queue);
+    
+    return (
+        <>
+            <p>Base state: <b>{baseState}</b></p>
+            <p>Queue: <b>[{queue.join(', ')}]</b></p>
+            <p>Expected result: <b>{expected}</b></p>
+            <p style={{
+                color: actual === expected ?
+                'green' :
+                'red'
+            }}>
+                Your result: <b>{actual}</b>
+                {' '}
+                ({actual === expected ?
+                'correct' :
+                'wrong'
+                })
+            </p>
+        </>
+    );
+}
 
 export default function App() {
     return (
@@ -70,34 +100,6 @@ export default function App() {
     );
 }
 
-function TestCase({
-    baseState,
-    queue,
-    expected
-    }) {
-
-    const actual = getFinalState(baseState, queue);
-    
-    return (
-        <>
-            <p>Base state: <b>{baseState}</b></p>
-            <p>Queue: <b>[{queue.join(', ')}]</b></p>
-            <p>Expected result: <b>{expected}</b></p>
-            <p style={{
-                color: actual === expected ?
-                'green' :
-                'red'
-            }}>
-                Your result: <b>{actual}</b>
-                {' '}
-                ({actual === expected ?
-                'correct' :
-                'wrong'
-                })
-            </p>
-        </>
-    );
-}
 
 
 
