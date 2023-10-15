@@ -1,10 +1,9 @@
 import "./App.css";
-// import State from "./components/state";
-import Galary from "./components/galary";
+import App from "./components/mutation";
 
 export default function Myapp() {
 	return (<>
-		<Galary />
+		<App />
 		{/* <State /> */}
 		{/* <Checker /> */}
 	</>
