@@ -6,16 +6,17 @@ function List ({children}) {
 }
 
 function HeroText ({children}) {
-	return <h1 className="text-neutral-300">{children}</h1>
+	return <h1 className="mt-12 pt-20 text-neutral-300 py-0">{children}</h1>
 }
 
 function GridContent ({children}) {
-	return <div className="h-16 rounded-lg text-neutral-200 subHead col-start-5 flex justify-center col-span-4 bg-slate-600 opacity-30">{children}</div>
+	return <div className="h-16 mt-12 rounded-lg text-neutral-200 subHead col-start-5 flex justify-center col-span-4  -600 opacity-30">{children}</div>
 }
 
-// function Card ({children}) {
-// 	return <h1>Card</h1>
-// }
+function Card ({children}) {
+	return <div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">{children}</div>
+
+}
 
 export default function Myapp() {
 	return (<>
@@ -73,24 +74,36 @@ export default function Myapp() {
 			</header>
 			<body>
 				<div className="container mx-auto">
-					<div className="grid grid-cols-12 gap-4">
-						<div className="h-auto col-span-5 col-start-2 col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg bg-slate-600 opacity-30">
+					<div className="grid grid-cols-12 gap-12">
+						<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg opacity-30">
 							<div>
-								<HeroText>Hello, I'm Victor!</HeroText>
-								<HeroText>A Backend Developer!</HeroText>
-								<HeroText>I know a bit of css too lol</HeroText>
+								<HeroText>Hello, I'm Victor! <br />A Backend Developer! <br />With a bit of frontend knowledge!😂😂😂</HeroText>
 							</div>
 						</div>
-						<div className="h-auto col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg bg-slate-600 opacity-30">
+						<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
 							<img src={Victor} height={750} width={750} className="rounded-full opacity-30" alt="Myself" />
 						</div>
 						<GridContent>My Skills</GridContent>
-						<div className="h-64 text-white bg-neutral-950 flex justify-center p-auto rounded-xl col-span-3 col-start-1">First card</div>
-						<div className="h-64 text-white bg-neutral-950 flex justify-center p-auto rounded-xl col-span-3">Second card</div>
-						<div className="h-64 text-white bg-neutral-950 flex justify-center p-auto rounded-xl col-span-3">Third card</div>
-						<div className="h-64 text-white bg-neutral-950 flex justify-center p-auto rounded-xl col-span-3">Fourth card</div>
+						<Card></Card>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+						<GridContent>My Projects</GridContent>
+						<Card>First card</Card>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
+						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+						<GridContent>Download CV</GridContent>
 					</div>
 				</div>
+				<footer className="w-full bg-neutral-600 h-24 grid grid-cols-10">
+					<div className="text-xl pt-8 flex text-neutral-300 justify-center col-start-2 col-span-3">
+						Copyright @ AgVictor. All rights Reserved!
+					</div>
+					<div className="text-xl p-8 flex text-neutral-300 justify-center col-start-7 col-span-4">
+						Designed by AgVictorCodes✨
+					</div>
+				</footer>
 			</body>
 		</>
 	);
