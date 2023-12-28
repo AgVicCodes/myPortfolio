@@ -10,7 +10,7 @@ function HeroText({ children }) {
 }
 
 function SubText({ children }) {
-	return <h1 className="mt-0 pt-8 text-lg text-neutral-300 py-0">{children}</h1>
+	return <h6 className="mt-0 pt-8 text-lg font-thin text-neutral-300 py-0">{children}</h6>
 }
 
 function GridContent({ children }) {
@@ -22,7 +22,7 @@ function Card({ children }) {
 }
 
 function CTA_main ({children}) {
-	return <button className="bg-purple-900 border-purple-500 p-2">{children}</button>
+	return <button className="bg-purple-600 hover:bg-purple-800 border-purple-500 hover:border-purple-700 p-3 text-neutral-200 rounded-md border-4 mt-8">{children}</button>
 }
 
 function Header() {
@@ -90,13 +90,14 @@ export default function Myapp() {
 			<section className="container mx-auto">
 				<div className="grid grid-cols-12 gap-12">
 					<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg opacity-30">
-						<div>
+						<div className="hero-section">
 							<HeroText>Hello there! <br />I'm Agbeleye Victor,  <br />a Backend-end Web developer and UI/UX designer!</HeroText>
 							<SubText>Looking towards working with companies with passion for creating intriguing User interfaces and experience.</SubText>
+							<CTA_main>Let's Talk</CTA_main>
 						</div>
 					</div>
 					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
-						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-30" alt="Myself" />
+						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-50 purple_grad" alt="Myself" />
 					</div>
 					<GridContent>My Skills</GridContent>
 					<Card>First </Card>

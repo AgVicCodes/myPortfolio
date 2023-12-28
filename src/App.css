@@ -1,15 +1,41 @@
 :root {
     background-color: #272727;
     background-image: url(images/texture2.jpg);
+    bleed: 100px;
     background-size: cover;
     background-blend-mode: multiply;
-    font-family: 'Times New Roman';
+}
+
+.hero-section {
+    font-family: 'Outfit';
 }
 
 body h1 {
     /* background-color: #200000; */
-    font-size: 63px;
-    font-family: 'Outfit';
+    font-size: 48px;
+}
+
+.purple_grad {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #ba85ec, #9333ea7c, #9333ea90, #9333ea60, #9333ea30, #9333ea00);
+    border-radius: 100%;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.purple_grad::before {
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:-1;
 }
 
 .subHead {
