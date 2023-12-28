@@ -1,38 +1,38 @@
 import "./App.css";
 import Victor from "./images/Victor1.jpg"
 
-function List ({children}) {
+function List({ children }) {
 	return <li className="my-8 mx-5 text-white hover:font-semibold transition ease-in-out duration-300">{children}</li>;
 }
 
-function HeroText ({children}) {
+function HeroText({ children }) {
 	return <h1 className="mt-12 pt-20 text-neutral-300 py-0">{children}</h1>
 }
 
-function GridContent ({children}) {
+function GridContent({ children }) {
 	return <div className="h-16 mt-12 rounded-lg text-neutral-200 subHead col-start-5 flex justify-center col-span-4  -600 opacity-30">{children}</div>
 }
 
-function Card ({children}) {
+function Card({ children }) {
 	return <div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">{children}</div>
 
 }
 
 export default function Myapp() {
 	return (<>
-			<header>
-				<nav className="opacity-50 flex flex-wrap items-center justify-between w-full bg-neutral-900">
-					<h3 className="my-8 mx-5 text-white ">AgVictor</h3>
-					
-					<ul className="flex">
-						<List>Projects</List>
-						<List>Contact</List>
-						<List>About</List>
-					</ul>
-					
-					<div className="social flex flex-row">
-						<a href="https://github.com/AgVicCodes">
-							<svg xmlns="http://www.w3.org/2000/svg" height="2em" className="mr-4" viewBox="0 0 496 512">
+		<header>
+			<nav className="opacity-50 flex flex-wrap items-center justify-between w-full bg-neutral-900">
+				<h3 className="my-8 mx-5 text-white ">AgVictor</h3>
+
+				<ul className="flex">
+					<List>Projects</List>
+					<List>Contact</List>
+					<List>About</List>
+				</ul>
+
+				<div className="social flex flex-row">
+					<a href="https://github.com/AgVicCodes">
+						<svg xmlns="http://www.w3.org/2000/svg" height="2em" className="mr-4" viewBox="0 0 496 512">
 							<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 
 							2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 
 							6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 
@@ -49,9 +49,9 @@ export default function Myapp() {
 							4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 
 							5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 
 							3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-						</a>
-						<a href="https://github.com/AgVicCodes">
-							<svg xmlns="http://www.w3.org/2000/svg" height="2em" className="mr-4" viewBox="0 0 496 512">
+					</a>
+					<a href="https://github.com/AgVicCodes">
+						<svg xmlns="http://www.w3.org/2000/svg" height="2em" className="mr-4" viewBox="0 0 496 512">
 							<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 
 							2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 
 							6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 
@@ -68,43 +68,43 @@ export default function Myapp() {
 							4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 
 							5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 
 							3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-						</a>
-					</div>
-				</nav>
-			</header>
-			<body>
-				<div className="container mx-auto">
-					<div className="grid grid-cols-12 gap-12">
-						<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg opacity-30">
-							<div>
-								<HeroText>Hello, I'm Victor! <br />A Backend Developer! <br />With a bit of frontend knowledge!😂😂😂</HeroText>
-							</div>
-						</div>
-						<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
-							<img src={Victor} height={750} width={750} className="rounded-full opacity-30" alt="Myself" />
-						</div>
-						<GridContent>My Skills</GridContent>
-						<Card></Card>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
-						<GridContent>My Projects</GridContent>
-						<Card>First card</Card>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
-						<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
-						<GridContent>Download CV</GridContent>
-					</div>
+					</a>
 				</div>
-				<footer className="w-full bg-neutral-600 h-24 grid grid-cols-10">
-					<div className="text-xl pt-8 flex text-neutral-300 justify-center col-start-2 col-span-3">
-						Copyright @ AgVictor. All rights Reserved!
+			</nav>
+		</header>
+		<body>
+			<section className="container mx-auto">
+				<div className="grid grid-cols-12 gap-12">
+					<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg opacity-30">
+						<div>
+							<HeroText>Hello, I'm Victor! <br />A Backend Developer! <br />With a bit of frontend knowledge!😂😂😂</HeroText>
+						</div>
 					</div>
-					<div className="text-xl p-8 flex text-neutral-300 justify-center col-start-7 col-span-4">
-						Designed by AgVictorCodes✨
+					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
+						<img src={Victor} height={750} width={750} className="rounded-full opacity-30" alt="Myself" />
 					</div>
-				</footer>
-			</body>
-		</>
+					<GridContent>My Skills</GridContent>
+					<Card></Card>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+					<GridContent>My Projects</GridContent>
+					<Card>First card</Card>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
+					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+					<GridContent>Download CV</GridContent>
+				</div>
+			</section>
+			<footer className="w-full bg-neutral-600 h-24 grid grid-cols-10">
+				<div className="text-xl pt-8 flex text-neutral-300 justify-center col-start-2 col-span-3">
+					Copyright © AgVictor. All rights Reserved!
+				</div>
+				<div className="text-xl p-8 flex text-neutral-300 justify-center col-start-7 col-span-4">
+					Designed by AgVictorCodes✨
+				</div>
+			</footer>
+		</body>
+	</>
 	);
 }
