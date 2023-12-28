@@ -6,7 +6,11 @@ function List({ children }) {
 }
 
 function HeroText({ children }) {
-	return <h1 className="mt-12 pt-20 text-neutral-300 py-0">{children}</h1>
+	return <h1 className="mt-4 pt-20 text-neutral-300 py-0">{children}</h1>
+}
+
+function SubText({ children }) {
+	return <h1 className="mt-0 pt-8 text-lg text-neutral-300 py-0">{children}</h1>
 }
 
 function GridContent({ children }) {
@@ -15,10 +19,13 @@ function GridContent({ children }) {
 
 function Card({ children }) {
 	return <div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">{children}</div>
-
 }
 
-export default function Myapp() {
+function CTA_main ({children}) {
+	return <button className="bg-purple-900 border-purple-500 p-2">{children}</button>
+}
+
+function Header() {
 	return (<>
 		<header>
 			<nav className="opacity-50 flex flex-wrap items-center justify-between w-full bg-neutral-900">
@@ -72,19 +79,27 @@ export default function Myapp() {
 				</div>
 			</nav>
 		</header>
+	</>);
+}
+
+export default function Myapp() {
+	return (
+	<>
+		<Header />
 		<body>
 			<section className="container mx-auto">
 				<div className="grid grid-cols-12 gap-12">
 					<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-5 rounded-lg opacity-30">
 						<div>
-							<HeroText>Hello, I'm Victor! <br />A Backend Developer! <br />With a bit of frontend knowledge!😂😂😂</HeroText>
+							<HeroText>Hello there! <br />I'm Agbeleye Victor,  <br />a Backend-end Web developer and UI/UX designer!</HeroText>
+							<SubText>Looking towards working with companies with passion for creating intriguing User interfaces and experience.</SubText>
 						</div>
 					</div>
 					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
-						<img src={Victor} height={750} width={750} className="rounded-full opacity-30" alt="Myself" />
+						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-30" alt="Myself" />
 					</div>
 					<GridContent>My Skills</GridContent>
-					<Card></Card>
+					<Card>First </Card>
 					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
 					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
 					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
