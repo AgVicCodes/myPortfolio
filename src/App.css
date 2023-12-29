@@ -19,7 +19,7 @@ body h1 {
     width: 100%;
     height: auto;
     background: linear-gradient(to right, #ba85ec, #9333ea7c, #9333ea90, #9333ea60, #9333ea30, #9333ea00);
-    padding: 20px;
+    padding: 10px;
     backdrop-filter: blur(10px);
     /* opacity: 50%; */
     /* border-radius: 100%;

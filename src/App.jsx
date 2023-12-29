@@ -106,7 +106,7 @@ export default function Myapp() {
 							<CTA_main>Let's Talk</CTA_main>
 						</div>
 					</div>
-					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg img-blur opacity-30">
+					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg img-blur">
 						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-50 purple_grad" alt="Myself" />
 					</div>
 					<GridContent>My Skills</GridContent>
