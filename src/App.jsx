@@ -17,18 +17,15 @@ function GridContent({ children }) {
 	return <div className="h-16 mt-12 rounded-lg text-neutral-200 subHead col-start-5 flex justify-center col-span-4  -600 opacity-30">{children}</div>
 }
 
-function Card({ children }) {
+function Card() {
 	return (
 		<>
-			{/* <div className="card-div"> */}
-				<div className="h-64 pt-4 col-span-10 col-start-2 card-div text-white bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">
-					<div className="card">
-						{children}
-					</div>
-				</div>
-			{/* </div> */}
+			<div className="h-64 pt-4 col-end-10 col-start-2 card-div text-white bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">FirstCard</div>
+			<div className="h-64 pt-4 col-end-10 col-start-2 text-white opacity-80 card-div bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
+			<div className="h-64 pt-4 col-end-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
+			<div className="h-64 pt-4 col-end-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
 		</>
-	)
+	);
 }
 
 function CTA_main ({children}) {
@@ -110,21 +107,15 @@ export default function Myapp() {
 						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-50 purple_grad" alt="Myself" />
 					</div>
 					<GridContent>My Skills</GridContent>
-					<Card>First </Card>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+					<Card/>
 					<GridContent>My Projects</GridContent>
-					<Card>First card</Card>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Second card</div>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">Third card</div>
-					<div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3">Fourth card</div>
+					<Card/>
 					<GridContent>Download CV</GridContent>
 				</div>
 			</section>
 			<footer className="w-full bg-neutral-600 h-24 grid grid-cols-10">
 				<div className="text-xl pt-8 flex text-neutral-300 justify-center col-start-2 col-span-3">
-					Copyright © AgVictor. All rights Reserved!
+					Copyright &#169 AgVictor. All rights Reserved!
 				</div>
 				<div className="text-xl p-8 flex text-neutral-300 justify-center col-start-7 col-span-4">
 					Designed by AgVictorCodes✨
