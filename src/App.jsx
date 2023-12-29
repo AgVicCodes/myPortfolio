@@ -18,7 +18,17 @@ function GridContent({ children }) {
 }
 
 function Card({ children }) {
-	return <div className="h-64 pt-4 col-span-10 col-start-2 text-white opacity-80 card bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">{children}</div>
+	return (
+		<>
+			{/* <div className="card-div"> */}
+				<div className="h-64 pt-4 col-span-10 col-start-2 card-div text-white bg-neutral-950 flex justify-center p-auto rounded-xl lg:col-span-3 lg:col-start-4">
+					<div className="card">
+						{children}
+					</div>
+				</div>
+			{/* </div> */}
+		</>
+	)
 }
 
 function CTA_main ({children}) {
@@ -96,7 +106,7 @@ export default function Myapp() {
 							<CTA_main>Let's Talk</CTA_main>
 						</div>
 					</div>
-					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg opacity-30">
+					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg img-blur opacity-30">
 						<img src={Victor} height="{150}" width="{150}" className="rounded-full opacity-50 purple_grad" alt="Myself" />
 					</div>
 					<GridContent>My Skills</GridContent>

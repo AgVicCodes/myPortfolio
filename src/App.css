@@ -1,5 +1,5 @@
 :root {
-    background-color: #272727;
+    background-color: #19161f;
     background-image: url(images/texture2.jpg);
     bleed: 100px;
     background-size: cover;
@@ -19,11 +19,13 @@ body h1 {
     width: 100%;
     height: auto;
     background: linear-gradient(to right, #ba85ec, #9333ea7c, #9333ea90, #9333ea60, #9333ea30, #9333ea00);
-    border-radius: 100%;
-    position: relative;
-    text-align: center;
     padding: 20px;
-    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    /* opacity: 50%; */
+    /* border-radius: 100%;
+    position: relative; */
+    /* text-align: center; */
+    /* box-sizing: border-box; */
 }
 
 .purple_grad::before {
@@ -50,8 +52,13 @@ div + img {
 } 
 
 .card {
+    /* opacity: 20%; */
     border: 0.1px solid #3d3d3d !important;
-    height: 383px;
+}
+
+.card-div {
+    border: 0.1px solid #3d3d3d !important;
+    backdrop-filter: blur(20px);
 }
 
 @media only screen and (max-width: 700px) {
