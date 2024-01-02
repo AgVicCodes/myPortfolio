@@ -13,19 +13,30 @@
 }
 
 body h1 {
-    /* background-color: #200000; */
     font-size: 48px;
 }
 
 body h2 {
-    /* background-color: #200000; */
-    font-size: 32px;
-    /* font-family: 'Outfit'; */
+    font-size: 40px;
+    opacity: 70%;
 }
 
 body h3 {
-    /* background-color: #200000; */
     font-size: 24px;
+}
+
+body h6 {
+    font-size: 18px;
+}
+
+nav h3 {
+    font-family: "Kaufmann BT";
+    /* font-family: "Kunstler Script"; */
+    /* font-family: "Rage"; */
+    /* font-family: "Pristina"; */
+    /* font-family: "Brush Script MT"; */
+    /* font-family: "Embassy"; */
+    /* font-family: "cursive"; */
 }
 
 .purple_grad {
@@ -98,13 +109,12 @@ div h6 {
     border-radius: 50%;
 }
 
-
+/* 
 ::-webkit-scrollbar-corner {
-}
+} */
 
 @media only screen and (max-width: 1600px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 40px;
     }
 
@@ -116,7 +126,6 @@ div h6 {
 
 @media only screen and (max-width: 1300px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 36px;
     }
 
@@ -124,11 +133,18 @@ div h6 {
         height: 410px !important;
         width: 410px !important;
     }
+
+    body h2 {
+        font-size: 36px;
+    }
+
+    body h6 {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 1050px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 40px;
     }
 }
@@ -141,21 +157,42 @@ div h6 {
 
 @media only screen and (max-width: 700px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 40px;
+    }
+
+    body h2 {
+        font-size: 32px;
+    }
+
+    body h6 {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 640px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 48px;
+    }
+
+    body h2 {
+        font-size: 24px;
+    }
+
+    body h6 {
+        font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 540px) {
     body h1 {
-        /* background-color: #200000; */
         font-size: 32px;
+    }
+
+    body h2 {
+        font-size: 18px;
+    }
+
+    body h6 {
+        font-size: 12px;
     }
 }
