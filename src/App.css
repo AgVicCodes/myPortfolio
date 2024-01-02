@@ -4,6 +4,7 @@
     bleed: 100px;
     background-size: cover;
     background-blend-mode: multiply;
+    overflow-y: hidden;
 }
 
 .hero-section {
