@@ -1,10 +1,11 @@
 :root {
-    background-color: #19161f;
+    background-color: #1f1c27;
     background-image: url(images/texture2.jpg);
     bleed: 100px;
     background-size: cover;
     background-blend-mode: multiply;
-    overflow-y: hidden;
+    font-family: 'Lucida Sans', 'outfit';
+    color-scheme: #ba85ec, #9333ea;
 }
 
 .hero-section {
@@ -14,6 +15,16 @@
 body h1 {
     /* background-color: #200000; */
     font-size: 48px;
+}
+
+body h2 {
+    /* background-color: #200000; */
+    font-size: 32px;
+}
+
+body h3 {
+    /* background-color: #200000; */
+    font-size: 24px;
 }
 
 .purple_grad {
@@ -29,27 +40,37 @@ body h1 {
     /* box-sizing: border-box; */
 }
 
-.purple_grad::before {
+/* .purple_grad::before {
+    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
     border-radius: 100%;
     content: '';
-    background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
     top: -10px;
     left: -10px;
     bottom: -10px;
     right: -10px;
     position: absolute;
     z-index:-1;
-}
+} */
 
 .subHead {
     font-size: 48px;
     font-weight: 500;
 }
 
+.themeColor {
+    color: #36266b;
+    border: 1px solid #36266b;
+}
+
 div + img {
     border-radius: 50%;
     opacity: 0.5;
     /* height: max-content; */
+} 
+
+div h6 {
+    font-family: "outfit";
+    font-weight: 100;
 } 
 
 .card {
@@ -62,10 +83,57 @@ div + img {
     backdrop-filter: blur(20px);
 }
 
+.tech-stacks {
+    background: #ffffff10;
+    backdrop-filter: blur(5px);
+    width: 100% !important;
+    /* padding: 0px 0px 128px; */
+}
+
+@media only screen and (max-width: 1600px) {
+    body h1 {
+        /* background-color: #200000; */
+        font-size: 40px;
+    }
+
+    div img {
+        height: 450px !important;
+        width: 450px !important;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    body h1 {
+        /* background-color: #200000; */
+        font-size: 30px;
+    }
+
+    div img {
+        height: 350px !important;
+        width: 350px !important;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    body h1 {
+        /* background-color: #200000; */
+        font-size: 48px;
+    }
+
+    .purple_grad {
+        display: none;
+    }
+
+    div img {
+        height: 200px !important;
+        width: 200px !important;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     body h1 {
         /* background-color: #200000; */
-        font-size: 56px;
+        font-size: 40px;
     }
 }
 
