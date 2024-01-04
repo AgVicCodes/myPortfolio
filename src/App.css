@@ -20,6 +20,7 @@ body h1 {
 body h2 {
     /* background-color: #200000; */
     font-size: 32px;
+    /* font-family: 'Outfit'; */
 }
 
 body h3 {
@@ -96,37 +97,34 @@ div h6 {
         font-size: 40px;
     }
 
-    div img {
-        height: 450px !important;
-        width: 450px !important;
+    .purple_grad {
+        height: 520px !important;
+        width: 520px !important;
     }
 }
 
 @media only screen and (max-width: 1300px) {
     body h1 {
         /* background-color: #200000; */
-        font-size: 30px;
+        font-size: 36px;
     }
 
-    div img {
-        height: 350px !important;
-        width: 350px !important;
+    .purple_grad {
+        height: 410px !important;
+        width: 410px !important;
     }
 }
 
 @media only screen and (max-width: 1050px) {
     body h1 {
         /* background-color: #200000; */
-        font-size: 48px;
+        font-size: 40px;
     }
+}
 
+@media only screen and (max-width: 1025px) {
     .purple_grad {
         display: none;
-    }
-
-    div img {
-        height: 200px !important;
-        width: 200px !important;
     }
 }
 
