@@ -91,6 +91,17 @@ div h6 {
     /* padding: 0px 0px 128px; */
 }
 
+::-webkit-scrollbar {
+    /* border: 1px solid #36266b; */
+    color: #2d2641;
+    width: 12.5px;
+    border-radius: 50%;
+}
+
+
+::-webkit-scrollbar-corner {
+}
+
 @media only screen and (max-width: 1600px) {
     body h1 {
         /* background-color: #200000; */

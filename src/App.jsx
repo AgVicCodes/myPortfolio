@@ -3,23 +3,17 @@ import Victor from "./images/Victor1.png"
 import php from "./images/tech-icons/Dedicated/php.png"
 import js from "./images/tech-icons/Dedicated/js.png"
 import css from "./images/tech-icons/Dedicated/css.png"
-import sql from "./images/tech-icons/Dedicated/sql.png"
-import kotlin from "./images/tech-icons/Dedicated/kotlin.png"
-import python from "./images/tech-icons/Dedicated/python.png"
 import laravel from "./images/tech-icons/Dedicated/laravel.png"
 import react from "./images/tech-icons/Dedicated/react.png"
 import bootstrap from "./images/tech-icons/Dedicated/bootstrap.png"
 import mysql from "./images/tech-icons/Dedicated/mysql.png"
-import android from "./images/tech-icons/Dedicated/android.png"
-import nodejs from "./images/tech-icons/Dedicated/nodejs.png"
-import next from "./images/tech-icons/Dedicated/next.png"
 import tailwind from "./images/tech-icons/Dedicated/tailwind.png"
-import mongodb from "./images/tech-icons/Dedicated/mongodb.png"
-import swift from "./images/tech-icons/Dedicated/swift.png"
 import adobe from "./images/tech-icons/Dedicated/xd.png"
 import figma from "./images/tech-icons/Dedicated/figma.png"
 import photoshop from "./images/tech-icons/Dedicated/photoshop.png"
 import illustrator from "./images/tech-icons/Dedicated/illustrator.png"
+import pc from "./images/Projects/final_sustento.png"
+import tab from "./images/Projects/Web_Apps.png"
 
 function List({ children }) {
 	return <li className="my-8 mx-5 text-white hover:font-semibold transition ease-in-out duration-300">{children}</li>;
@@ -110,14 +104,14 @@ function Header() {
 export default function Myapp() {
 	return (
 	<>
-		<Header />
 		<body>
+			<Header />
 			<div className="container mx-auto">
 				<div className="grid grid-cols-12 gap-12">
 					<div className="h-auto col-start-2 col-span-11 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-3 rounded-lg opacity-30">
 						<div className="hero-section">
-							<HeroText>Hello there! <br />I'm Agbeleye Victor,  <br />a Backend-end Web developer and UI/UX designer!</HeroText>
-							<SubText>Looking towards working with companies with passion for creating intriguing User interfaces and experience.</SubText>
+							<h1 className="mt-0 pt-20 text-neutral-300 py-0">Hello there! <br />I'm Agbeleye Victor,  <br />a Backend-end Web developer and UI/UX designer!</h1>
+							<h6 className="mt-0 pt-8 text-lg font-thin text-neutral-300 py-0">Looking towards working with companies with passion for creating intriguing User interfaces and experience.</h6>
 							<CtaMain>Let's Talk</CtaMain>
 						</div>
 					</div>
@@ -128,125 +122,87 @@ export default function Myapp() {
 			</div>
 			<div className="tech-stacks mt-16 pb-32">
 				<div className="container mx-auto">
-					<div className="grid grid-cols-12 gap-12">
-						<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Languages & Frameworks</h2>
-						<div className="col-start-4 col-end-5">
-							<img className="mb-4" src={php} alt="php" />
+					<div className="grid grid-cols-6 gap-12 lg:grid-cols-12">
+						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Languages & Frameworks</h2>
+						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
+							<img className="mb-4 opacity-40" src={php} alt="php" />
 							<h6 className="flex justify-center text-neutral-50">PHP</h6>
 						</div>
-						<div className="col-start-5 col-end-6">
-							<img className="mb-4" src={js} alt="php" />
+						<div className="col-start-3 col-end-4 lg:col-start-6 lg:col-end-7">
+							<img className="mb-4 opacity-40" src={js} alt="js" />
 							<h6 className="flex justify-center text-neutral-50">Javascript</h6>
 						</div>
-						<div className="col-start-6 col-end-7">
-							<img className="mb-4" src={css} alt="php" />
+						<div className="col-start-4 col-end-5 lg:col-start-7 lg:col-end-8">
+							<img className="mb-4 opacity-40" src={css} alt="css" />
 							<h6 className="flex justify-center text-neutral-50">CSS</h6>
 						</div>
-						<div className="col-start-7 col-end-8">
-							<img className="mb-4" src={sql} alt="php" />
-							<h6 className="flex justify-center text-neutral-50">SQL</h6>
-						</div>
-						<div className="col-start-8 col-end-9">
-							<img className="mb-4" src={kotlin} alt="php" />
-							<h6 className="flex justify-center text-neutral-50">Kotlin</h6>
-						</div>
-						<div className="col-start-9 col-end-10">
-							<img className="mb-4" src={python} alt="php" />
-							<h6 className="flex justify-center text-neutral-50">Python</h6>
-						</div>
-						<div className="w-100"></div>
-						<div className="col-start-4 col-end-5">
-							<img className="mb-4" src={laravel} alt="laravel" />
-							<h6 className="flex justify-center text-neutral-50">Laravel</h6>
-						</div>
-						<div className="col-start-5 col-end-6">
-							<img className="mb-4" src={react} alt="react" />
-							<h6 className="flex justify-center text-neutral-50">React</h6>
-						</div>
-						<div className="col-start-6 col-end-7">
-							<img className="mb-4" src={bootstrap} alt="bootstrapt" />
-							<h6 className="flex justify-center text-neutral-50">Bootstrap</h6>
-						</div>
-						<div className="col-start-7 col-end-8">
-							<img className="mb-4" src={mysql} alt="mysql" />
+						<div className="col-start-5 col-end-6 lg:col-start-8 lg:col-end-9">
+							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
 							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
 						</div>
-						<div className="col-start-8 col-end-9">
-							<img className="mb-4" src={android} alt="android" />
-							<h6 className="flex justify-center text-neutral-50">Android</h6>
-						</div>
-						<div className="col-start-9 col-end-10">
-							<img className="mb-4" src={nodejs} alt="nodejs" />
-							<h6 className="flex justify-center text-neutral-50">Nodejs</h6>
-						</div>
 						<div className="w-100"></div>
-						<div className="col-start-5 col-end-6">
-							<img className="mb-4" src={next} alt="next" />
-							<h6 className="flex justify-center text-neutral-50">Next</h6>
+						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
+							<img className="mb-4 opacity-40" src={laravel} alt="laravel" />
+							<h6 className="flex justify-center text-neutral-50">Laravel</h6>
 						</div>
-						<div className="col-start-6 col-end-7">
-							<img className="mb-4" src={tailwind} alt="tailwind" />
+						<div className="col-start-3 col-end-4 lg:col-start-6 lg:col-end-7">
+							<img className="mb-4 opacity-40" src={react} alt="react" />
+							<h6 className="flex justify-center text-neutral-50">React</h6>
+						</div>
+						<div className="col-start-4 col-end-5 lg:col-start-7 lg:col-end-8">
+							<img className="mb-4 opacity-40" src={bootstrap} alt="bootstrapt" />
+							<h6 className="flex justify-center text-neutral-50">Bootstrap</h6>
+						</div>
+						<div className="col-start-5 col-end-6 lg:col-start-8 lg:col-end-9">
+							<img className="mb-4 opacity-40" src={tailwind} alt="tailwind" />
 							<h6 className="flex justify-center text-neutral-50">Tailwind</h6>
-						</div>
-						<div className="col-start-7 col-end-8">
-							<img className="mb-4" src={mongodb} alt="mongodb" />
-							<h6 className="flex justify-center text-neutral-50">Mongodb</h6>
-						</div>
-						<div className="col-start-8 col-end-9">
-							<img className="mb-4" src={swift} alt="swift" />
-							<h6 className="flex justify-center text-neutral-50">Swift</h6>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className="tech-stacks mt-16 pb-32">
 				<div className="container mx-auto">
-					<div className="grid grid-cols-12 gap-12">
-						<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Design Tools</h2>
-						<div className="col-start-5 col-end-6">
-							<div className="">
-								<img className="mb-4" src={adobe} alt="Adobe" />
-								<h6 className="flex justify-center text-neutral-50">Adobe XD</h6>								
-							</div>
+					<div className="grid grid-cols-6 lg:grid-cols-12 gap-12">
+						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Design Tools</h2>
+						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
+							<img className="mb-4 opacity-40" src={adobe} alt="Adobe" />
+							<h6 className="flex justify-center text-neutral-50">Adobe XD</h6>								
 						</div>
-						<div className="col-start-6 col-end-7">
-							<div className="">
-								<img className="mb-4" src={figma} alt="Figma" />
-								<h6 className="flex justify-center text-neutral-50">Figma</h6>
-							</div>
+						<div className="col-start-3 col-end-4 lg:col-start-6 lg:col-end-7">
+							<img className="mb-4 opacity-40" src={figma} alt="Figma" />
+							<h6 className="flex justify-center text-neutral-50">Figma</h6>
 						</div>
-						<div className="col-start-7 col-end-8">
-							<div className="">
-								<img className="mb-4" src={photoshop} alt="Photoshop" />
-								<h6 className="flex justify-center text-neutral-50">Photoshop</h6>
-							</div>
+						<div className="col-start-4 col-end-5 lg:col-start-7 lg:col-end-8">
+							<img className="mb-4 opacity-40" src={photoshop} alt="Photoshop" />
+							<h6 className="flex justify-center text-neutral-50">Photoshop</h6>
 						</div>
-						<div className="col-start8- col-end-9">
-							<div className="">
-								<img className="mb-4" src={illustrator} alt="Illustrator" />
-								<h6 className="flex justify-center text-neutral-50">Illustrator</h6>
-							</div>
+						<div className="col-start-5 col-end-6 lg:col-start-8 lg:col-end-9">
+							<img className="mb-4 opacity-40" src={illustrator} alt="Illustrator" />
+							<h6 className="flex justify-center text-neutral-50">Illustrator</h6>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="tech-stacks mt-16 pb-32">
-				<div className="container nx-auto">
+			<div className="mt-16 pb-32">
+				<div className="container mx-auto">
 					<div className="grid grid-cols-12 gap-4">
 						<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Recent Projects</h2>
+						<div className="flex justify-center col-span-12">
+							<img className="mt-16 mb-4" draggable="false" src={pc} alt="design" />
+						</div>
+						<div className="flex justify-center col-span-12">
+							<img className="mt-16 mb-4" draggable="false" src={tab} alt="web_app" />
+						</div>
 					</div>
 				</div>
 			</div>
 			
 
-			<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Testimonials</h2>
+			<h2 className="w-auto col-span-12 text-white flex justify-center uppercase">Testimonials</h2>
 
-			<footer className="w-full bg-neutral-600 h-24 grid grid-cols-10">
-				<div className="text-xl pt-8 flex text-neutral-300 justify-center col-start-2 col-span-3">
-					Copyright &#169 AgVictor. All rights Reserved!
-				</div>
-				<div className="text-xl p-8 flex text-neutral-300 justify-center col-start-7 col-span-4">
-					Designed by AgVictorCodes✨
+			<footer className="bg-neutral-600 flex justify-between h-24 px-16 lg:px-32">
+				<div className="text-xs lg:text-xl p-8 text-neutral-300">
+					Copyright &#169 AgVictor. All rights Reserved! Designed by AgVictorCodes ♥
 				</div>
 			</footer>
 		</body>
