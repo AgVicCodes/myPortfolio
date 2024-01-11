@@ -69,6 +69,7 @@ function Header() {
 				<div className="hidden w-100 md:flex md:flex-row md:justify-between" id="menu">
 					
 					<ul className="flex flex-col md:flex md:flex-row">
+						{/* Repeated code */}
 						<li className="mx-5 my-3 md:my-auto md:mx-5 text-white hover:font-semibold transition ease-in-out duration-300">Projects</li>
 						<li className="mx-5 my-3 md:my-auto md:mx-5 text-white hover:font-semibold transition ease-in-out duration-300">Contact</li>
 						<li className="mx-5 my-3 md:my-auto md:mx-5 text-white hover:font-semibold transition ease-in-out duration-300">About</li>
@@ -76,6 +77,7 @@ function Header() {
 							Socials
 							
 							<div className="my-auto">
+								{/* Repeated code */}
 								<a href="https://github.com/AgVicCodes" className="px-2">
 									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#9333ea" className="bi bi-github" viewBox="0 0 16 16">
 										<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -129,11 +131,11 @@ export default function Myapp() {
 			<Header />
 			<div className="container mx-auto">
 				<div className="grid grid-cols-12 gap-12">
-					<div className="h-auto col-start-2 col-end-9 md:col-start-2 md:col-span-9 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-3 rounded-lg opacity-70">
+					<div className="h-auto col-start-2 col-end-9 md:col-start-2 md:col-span-9 lg:col-span-5 lg:col-start-2 lg:col-end-7 row-span-1 flex justify-y-center py-3 rounded-lg opacity-80">
 						<div className="hero-section">
 							<h1 className="mt-0 pt-20 text-neutral-300 py-0">Hello there! <br />I'm Agbeleye Victor,  <br />a Backend-end Web developer and UI/UX designer!</h1>
 							<h6 className="mt-0 pt-8 text-lg font-thin text-neutral-300 py-0">Looking towards working with companies with passion for creating intriguing User interfaces and experience.</h6>
-							<button className="bg-purple-600 hover:bg-purple-800 border-purple-500 hover:border-purple-700 p-3 text-neutral-200 rounded-md border-4 mt-8">Let's Talk</button>
+							<button className="ctaMain p-3 text-neutral-200 rounded-md border-4 mt-8">Let's Talk</button>
 						</div>
 					</div>
 					<div className="mt-12 col-span-5 col-start-7 col-end-12 flex justify-end rounded-lg img-blur">
@@ -144,7 +146,12 @@ export default function Myapp() {
 			<div className="tech-stacks mt-16 pb-32">
 				<div className="container mx-auto">
 					<div className="grid grid-cols-6 gap-12 lg:grid-cols-12">
+						{/* Repeated code */}
 						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Languages & Frameworks</h2>
+						<div className="col-start-1 col-end-2 lg:col-start-8 lg:col-end-9">
+							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
+							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
+						</div>
 						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
 							<img className="mb-4 opacity-40" src={php} alt="php" />
 							<h6 className="flex justify-center text-neutral-50">PHP</h6>
@@ -158,6 +165,10 @@ export default function Myapp() {
 							<h6 className="flex justify-center text-neutral-50">CSS</h6>
 						</div>
 						<div className="col-start-5 col-end-6 lg:col-start-8 lg:col-end-9">
+							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
+							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
+						</div>
+						<div className="col-start-6 col-end-7 lg:col-start-8 lg:col-end-9">
 							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
 							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
 						</div>
@@ -184,10 +195,11 @@ export default function Myapp() {
 			<div className="tech-stacks mt-16 pb-32">
 				<div className="container mx-auto">
 					<div className="grid grid-cols-6 lg:grid-cols-12 gap-12">
+						{/* Repeated code */}
 						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Design Tools</h2>
 						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
-							<img className="mb-4 opacity-40" src={adobe} alt="Adobe" />
-							<h6 className="flex justify-center text-neutral-50">Adobe XD</h6>								
+							<img className="mb-4 opacity-40" src={adobe} alt="XD" />
+							<h6 className="flex justify-center text-neutral-50">AdobeXD</h6>								
 						</div>
 						<div className="col-start-3 col-end-4 lg:col-start-6 lg:col-end-7">
 							<img className="mb-4 opacity-40" src={figma} alt="Figma" />
@@ -204,26 +216,41 @@ export default function Myapp() {
 					</div>
 				</div>
 			</div>
-			<div className="mt-16 pb-32">
+			<div className="mt-16">
 				<div className="container mx-auto">
 					<div className="grid grid-cols-12 gap-4">
+						{/* Repeated code */}
 						<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Recent Projects</h2>
+						<h4 className="mt-8 text-xs lg:text-2xl col-span-12 text-white flex justify-center opacity-40 uppercase">UI/UX designs</h4>
 						<div className="flex justify-center col-span-12">
-							<img className="mt-16 mb-4" draggable="false" src={pc} alt="design" />
+							<img className="mt-12 mb-4" draggable="false" src={pc} alt="design" />
+						</div>
+						<h4 className="mt-8 text-xs lg:text-2xl col-span-12 text-white flex justify-center opacity-40 uppercase">Web Applications</h4>
+						<div className="flex justify-center col-span-12">
+							<img className="mt-8" draggable="false" src={tab} alt="web_app" />
 						</div>
 						<div className="flex justify-center col-span-12">
-							<img className="mt-16 mb-4" draggable="false" src={tab} alt="web_app" />
+							<button className="ctaMain flex p-3 text-neutral-200 
+							rounded-md border-4 mt-8">
+								View More Projects
+								<svg xmlns="http://www.w3.org/2000/svg" className="my-auto ml-1" fill="#fff" width={16} height={16} viewBox="0 0 448 512"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"/></svg>
+							</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			
 
-			<h2 className="w-auto col-span-12 text-white flex justify-center uppercase">Testimonials</h2>
+			<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Testimonials</h2>
 
-			<footer className="bg-neutral-600 flex justify-between h-24 px-16 lg:px-32">
-				<div className="text-xs lg:text-xl p-8 text-neutral-300">
-					Copyright &#169 AgVictor. All rights Reserved! Designed by AgVictorCodes ♥
+			{/* <button className="ctaMain">Get Started!</button> */}
+
+			<footer className="flex justify-between h-24 px-4 md:px-16 lg:px-32">
+				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">
+					© 2024 AgVictor. All Rights Reserved! 
+				</div>
+				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">
+					Designed by AgVictorCodes♥
 				</div>
 			</footer>
 		</body>
