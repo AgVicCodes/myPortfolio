@@ -1,4 +1,8 @@
 import "./App.css";
+import React from 'react'
+import { useState } from 'react';
+import { sculptureList } from './data.js';
+import Logo from "./images/Logo.png"
 import Victor from "./images/Victor1.png"
 import php from "./images/tech-icons/Dedicated/php.png"
 import js from "./images/tech-icons/Dedicated/js.png"
@@ -14,6 +18,7 @@ import photoshop from "./images/tech-icons/Dedicated/photoshop.png"
 import illustrator from "./images/tech-icons/Dedicated/illustrator.png"
 import pc from "./images/Projects/final_sustento.png"
 import tab from "./images/Projects/Web_Apps.png"
+import avatar from "./images/Person.png"
 
 // function List({ children }) {
 // 	return <li className="my-8 mx-5 text-white hover:font-semibold transition ease-in-out duration-300">{children}</li>;
@@ -51,13 +56,71 @@ function showMenu() {
 	menu.classList.toggle('hidden');
 }
 
+function Gallery({image, clientName, quote}) {
+
+    const [index, setIndex] = useState(0);
+
+    function handleNext() {
+        if (index >= sculptureList.length - 1) {
+            setIndex(0);
+        } else {
+            setIndex(index + 1);
+        }
+        // setIndex(index + 1);
+    }
+
+    function handlePrev() {
+        if (index >= 1) {
+            setIndex(index - 1);
+        } else {
+            setIndex(sculptureList.length - 1);
+        }
+            // setIndex(index - 1);
+    }
+
+    let sculpture = sculptureList[index];
+    return (
+        <>
+            <div className="flex justify-center col-span-12 mt-8">
+				<img src={image} draggable="false" className="w-32 md:w-64 h-auto" alt="Client" />
+			</div>
+			{/* <div className="flex justify-between col-span-12"> */}
+			{/* </div> */}
+			<span className="flex col-start-2 col-span-1">
+				<svg xmlns="http://www.w3.org/2000/svg" className="w-4 opacity-40" fill="#ffffff"  viewBox="0 0 256 512">
+					<path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"/>
+				</svg>
+			</span>
+			<h2 className="col-start-4 col-span-6 flex justify-center text-white opacity-70">{clientName}</h2>
+			<span className="flex col-start-11 md:col-start-12 col-span-1">
+				<svg xmlns="http://www.w3.org/2000/svg" className="w-4 opacity-40" fill="#ffffff"  viewBox="0 0 256 512">
+					<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/>
+				</svg>
+			</span>
+			<h6 className="flex flex-row justify-center text-white opacity-70 md:col-start-4 md:col-span-6 col-start-3 col-span-8 text-center ">
+				{quote}
+			</h6>
+			{/* <button className="bg-green-600 p-2 hover:bg-green-800 border-2 border-green-900 rounded-md" onClick={handleNext}>Next</button>
+            <h2 className="text-white"><i>{sculpture.name} </i> by {sculpture.artist}</h2>
+            <h3  className="text-white">  
+                ({index + 1} of {sculptureList.length})
+            </h3>
+            <img 
+                src={sculpture.url} alt={sculpture.alt} />
+            <p className="text-white">{sculpture.description}</p>
+            <button className="bg-green-600 p-2 hover:bg-green-800 border-2 border-green-900 rounded-md" onClick={handlePrev}>Previous</button> */}
+        </>
+    );
+}
+
 function Header() {
 	return (<>
 		<header>
+
 			<nav className="opacity-70 md:flex md:flex-row md:justify-between w-full bg-neutral-900">
 				
 				<div className="flex flex-row flex-wrap justify-between ">
-					<h3 className="my-8 mx-5 text-white ">AgVictorCodes</h3>
+					<img src={Logo} className="w-24 lg:w-40 my-8 mx-5 text-white logo" alt="Logo" />
 
 					<div className="btn my-auto mx-5 md:hidden">
 						<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#9333ea" className="bi bi-hamburger" onClick={() => showMenu()} viewBox="0 0 512 512">
@@ -145,13 +208,9 @@ export default function Myapp() {
 			</div>
 			<div className="tech-stacks mt-16 pb-32">
 				<div className="container mx-auto">
-					<div className="grid grid-cols-6 gap-12 lg:grid-cols-12">
+					<div className="grid grid-cols-6 gap-6 lg:gap-12 lg:grid-cols-12">
 						{/* Repeated code */}
 						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Languages & Frameworks</h2>
-						<div className="col-start-1 col-end-2 lg:col-start-8 lg:col-end-9">
-							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
-							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
-						</div>
 						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
 							<img className="mb-4 opacity-40" src={php} alt="php" />
 							<h6 className="flex justify-center text-neutral-50">PHP</h6>
@@ -165,10 +224,6 @@ export default function Myapp() {
 							<h6 className="flex justify-center text-neutral-50">CSS</h6>
 						</div>
 						<div className="col-start-5 col-end-6 lg:col-start-8 lg:col-end-9">
-							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
-							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
-						</div>
-						<div className="col-start-6 col-end-7 lg:col-start-8 lg:col-end-9">
 							<img className="mb-4 opacity-40" src={mysql} alt="mysql" />
 							<h6 className="flex justify-center text-neutral-50">Mysql</h6>
 						</div>
@@ -192,14 +247,14 @@ export default function Myapp() {
 					</div>
 				</div>
 			</div>
-			<div className="tech-stacks mt-16 pb-32">
+			<div className="tech-stacks mt-16 pb-16">
 				<div className="container mx-auto">
-					<div className="grid grid-cols-6 lg:grid-cols-12 gap-12">
+					<div className="grid grid-cols-6 gap-6 lg:gap-12 lg:grid-cols-12">
 						{/* Repeated code */}
-						<h2 className="mt-16 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Design Tools</h2>
+						<h2 className="mt-16 mb-4 w-auto col-span-6 lg:col-span-12 text-white flex justify-center uppercase">Design Tools</h2>
 						<div className="col-start-2 col-end-3 lg:col-start-5 lg:col-end-6">
 							<img className="mb-4 opacity-40" src={adobe} alt="XD" />
-							<h6 className="flex justify-center text-neutral-50">AdobeXD</h6>								
+							<h6 className="flex justify-center text-center text-neutral-50">Adobe XD</h6>								
 						</div>
 						<div className="col-start-3 col-end-4 lg:col-start-6 lg:col-end-7">
 							<img className="mb-4 opacity-40" src={figma} alt="Figma" />
@@ -221,7 +276,7 @@ export default function Myapp() {
 					<div className="grid grid-cols-12 gap-4">
 						{/* Repeated code */}
 						<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Recent Projects</h2>
-						<h4 className="mt-8 text-xs lg:text-2xl col-span-12 text-white flex justify-center opacity-40 uppercase">UI/UX designs</h4>
+						<h4 className="mt-4 text-xs lg:text-2xl col-span-12 text-white flex justify-center opacity-40 uppercase">UI/UX designs</h4>
 						<div className="flex justify-center col-span-12">
 							<img className="mt-12 mb-4" draggable="false" src={pc} alt="design" />
 						</div>
@@ -240,10 +295,19 @@ export default function Myapp() {
 				</div>
 			</div>
 			
-
-			<h2 className="mt-16 w-auto col-span-12 text-white flex justify-center uppercase">Testimonials</h2>
-
-			{/* <button className="ctaMain">Get Started!</button> */}
+			<div className="container mx-auto">
+				<div className="grid grid-cols-12 gap-4 test">
+					<h2 className="mt-16 w-auto text-white col-span-12 flex justify-center uppercase">Testimonials</h2>
+					{/* <button className="p-4 rounded-lg ctaMain">Get Started!</button> */}
+					{/* Testimonials gallery */}
+					<Gallery 
+						image={avatar}
+						clientName={"Mr CEO"}
+						quote={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste unde fugiat ratione repudiandae eos perspiciatis maxime doloribus impedit nam id at voluptate veritatis, nihil voluptatibus temporibus, voluptatum deleniti alias magnam?"}
+					/>
+					
+				</div>
+			</div>
 
 			<footer className="flex justify-between h-24 px-4 md:px-16 lg:px-32">
 				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">
