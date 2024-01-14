@@ -308,6 +308,15 @@ export default function Myapp() {
 					
 				</div>
 			</div>
+			
+			<div className="">
+				<div className="">
+					<h2 className="">Have an Idea?<br />Let's build it</h2>
+					<button className="">
+						Let's Talk	
+					</button>				
+				</div>		
+			</div>
 
 			<footer className="flex justify-between h-24 px-4 md:px-16 lg:px-32">
 				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">

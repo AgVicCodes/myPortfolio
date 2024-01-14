@@ -65,6 +65,13 @@ footer {
     /* opacity: 10%; */
 }
 
+.final {
+    width: 70%;
+    background-color: #5a1897;
+    height: 200px;
+    /* text-align: center; */
+}
+
 .hero-section {
     font-family: 'Outfit';
 }
