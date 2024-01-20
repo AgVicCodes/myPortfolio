@@ -309,18 +309,28 @@ export default function Myapp() {
 				</div>
 			</div>
 			
+			{/* <div className="flex justify-center">
+				<div className="flex justify-between w-8/12 bg-purple-900">
+					<h2 className="col-span-5 col-start-2 text-white uppercase">Have an Idea?<br />Let's build it</h2>
+					<button className="col-span-3 col-start-7 border-2 text-white p-4 rounded-lg">
+						Let's Talk
+					</button>				
+				</div>		
+			</div> */}
+
 			<div className="">
 				<div className="">
 					<h2 className="">Have an Idea?<br />Let's build it</h2>
 					<button className="">
-						Let's Talk	
+						Let's Talk
 					</button>				
 				</div>		
 			</div>
 
+
 			<footer className="flex justify-between h-24 px-4 md:px-16 lg:px-32">
 				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">
-					© 2024 AgVictor. All Rights Reserved! 
+					Copyright © 2024 AgVictorCodes. 
 				</div>
 				<div className="text-xs md:text-lg lg:text-xl my-auto text-neutral-300">
 					Designed by AgVictorCodes♥

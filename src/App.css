@@ -76,10 +76,6 @@ footer {
     font-family: 'Outfit';
 }
 
-.logo:hover {
-    border: 3px solid red;
-}
-
 .messageBox {
     color-scheme: #23122D;
 }
