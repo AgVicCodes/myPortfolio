@@ -1,7 +1,7 @@
 import "./App.css";
 import React from 'react'
-import { useState } from 'react';
-import { sculptureList } from './data.js';
+// import { useState } from 'react';
+// import { sculptureList } from './data.js';
 import Logo from "./images/Logo.png"
 import Victor from "./images/Victor1.png"
 import php from "./images/tech-icons/Dedicated/php.png"
@@ -58,27 +58,27 @@ function showMenu() {
 
 function Gallery({image, clientName, quote}) {
 
-    const [index, setIndex] = useState(0);
+    // const [index, setIndex] = useState(0);
 
-    function handleNext() {
-        if (index >= sculptureList.length - 1) {
-            setIndex(0);
-        } else {
-            setIndex(index + 1);
-        }
-        // setIndex(index + 1);
-    }
+    // function handleNext() {
+    //     if (index >= sculptureList.length - 1) {
+    //         setIndex(0);
+    //     } else {
+    //         setIndex(index + 1);
+    //     }
+    //     // setIndex(index + 1);
+    // }
 
-    function handlePrev() {
-        if (index >= 1) {
-            setIndex(index - 1);
-        } else {
-            setIndex(sculptureList.length - 1);
-        }
-            // setIndex(index - 1);
-    }
+    // function handlePrev() {
+    //     if (index >= 1) {
+    //         setIndex(index - 1);
+    //     } else {
+    //         setIndex(sculptureList.length - 1);
+    //     }
+    //         // setIndex(index - 1);
+    // }
 
-    let sculpture = sculptureList[index];
+    // let sculpture = sculptureList[index];
     return (
         <>
             <div className="flex justify-center col-span-12 mt-8">
